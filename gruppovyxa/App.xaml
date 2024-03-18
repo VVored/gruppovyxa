@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:gruppovyxa"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        
+        <Style x:Key="StackPanelStyle1" TargetType="{x:Type StackPanel}"/>
     </Application.Resources>
 </Application>
