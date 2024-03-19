@@ -13,18 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace gruppovyxa
+namespace gruppovyxa.frames
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ChooseProfessionPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ChooseProfessionPage : Page
     {
-        public MainWindow()
+        public ChooseProfessionPage()
         {
             InitializeComponent();
-            Menu menu = new Menu();
-            menu.Show();
         }
     }
 }

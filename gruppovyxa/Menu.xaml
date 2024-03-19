@@ -1,0 +1,46 @@
+﻿<Window x:Class="gruppovyxa.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gruppovyxa"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="76*"/>
+            <ColumnDefinition Width="321*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="imgs/image 1.png" Stretch="UniformToFill" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="0,0,-0.4,0" Width="794"></Image>
+        <StackPanel Background="Black" Opacity="0.8" Grid.ColumnSpan="2" Margin="0,0,-0.4,0"></StackPanel>
+
+        <StackPanel Background="White" Name="menu" Grid.Column="0">
+            <Image Source="imgs/Parsec Games.png" Width="40" Margin="0, 10"></Image>
+            <Button Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Left" Click="chooseProf">
+                <Button.Content>
+                    <TextBlock FontSize="25" Padding="10, 0" TextWrapping="Wrap" Margin="0, 10, 0, 0">Выбор профессии</TextBlock>
+                </Button.Content>
+            </Button>
+            <Button Click="rating" Background="Transparent" BorderBrush="Transparent" HorizontalContentAlignment="Left">
+                <Button.Content>
+                    <TextBlock Padding="10, 0" FontSize="25" Margin="0, 15, 0, 0">Рейтинг</TextBlock>
+                </Button.Content>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="70" Background="White">
+            <Button Click="Back" Width="37" Background="Transparent" BorderBrush="Transparent" Margin="30, 10" HorizontalAlignment="Left">
+                <Path Stroke="Black" Data="M 12 0 L 16 4 L 12 8 M 1 4 L 16 4" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="17">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+            </Button>
+            <Frame Name="frame" NavigationUIVisibility="Hidden"></Frame>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -13,18 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace gruppovyxa
+namespace gruppovyxa.frames
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для TablesResultPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TablesResultPage : Page
     {
-        public MainWindow()
+        public TablesResultPage()
         {
             InitializeComponent();
-            Menu menu = new Menu();
-            menu.Show();
         }
     }
 }
