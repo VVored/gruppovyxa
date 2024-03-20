@@ -10,21 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace gruppovyxa
+namespace gruppovyxa.frames
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для programmerCrossword.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class programmerCrossword : Window
     {
-        public MainWindow()
+        public programmerCrossword()
         {
             InitializeComponent();
-            CrosswordWindow crosswordWindow = new CrosswordWindow();
-            crosswordWindow.Show();
         }
     }
 }

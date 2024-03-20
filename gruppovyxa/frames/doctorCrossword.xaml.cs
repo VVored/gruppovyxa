@@ -13,18 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace gruppovyxa
+namespace gruppovyxa.frames
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для doctorCrossword.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class doctorCrossword : Page
     {
-        public MainWindow()
+        public doctorCrossword()
         {
             InitializeComponent();
-            CrosswordWindow crosswordWindow = new CrosswordWindow();
-            crosswordWindow.Show();
         }
     }
 }

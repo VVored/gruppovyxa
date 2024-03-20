@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:gruppovyxa"
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800">
-    <Grid>
+    <Grid Name="grid1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="76*"/>
             <ColumnDefinition Width="321*"/>
@@ -27,8 +27,12 @@
                 </Button.Content>
             </Button>
         </StackPanel>
-        <StackPanel Grid.Column="1" Margin="70" Background="White">
-            <Button Click="Back" Width="37" Background="Transparent" BorderBrush="Transparent" Margin="30, 10" HorizontalAlignment="Left">
+        <Grid Grid.Column="1" Margin="70" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="31*"/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Click="Back" Width="37" Background="Transparent" BorderBrush="Transparent" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="11">
                 <Path Stroke="Black" Data="M 12 0 L 16 4 L 12 8 M 1 4 L 16 4" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="17">
                     <Path.RenderTransform>
                         <TransformGroup>
@@ -40,7 +44,7 @@
                     </Path.RenderTransform>
                 </Path>
             </Button>
-            <Frame Name="frame" NavigationUIVisibility="Hidden"></Frame>
-        </StackPanel>
+            <Frame Name="frame" NavigationUIVisibility="Hidden" Grid.Row="1"></Frame>
+        </Grid>
     </Grid>
 </Window>

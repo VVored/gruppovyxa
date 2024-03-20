@@ -55,7 +55,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CrosswordWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frames\ChooseProfessionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frames\doctorCrossword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frames\lawyerCrossword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frames\programmerCrossword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -71,8 +87,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CrosswordWindow.xaml.cs">
+      <DependentUpon>CrosswordWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="frames\ChooseProfessionPage.xaml.cs">
       <DependentUpon>ChooseProfessionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frames\doctorCrossword.xaml.cs">
+      <DependentUpon>doctorCrossword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frames\lawyerCrossword.xaml.cs">
+      <DependentUpon>lawyerCrossword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frames\programmerCrossword.xaml.cs">
+      <DependentUpon>programmerCrossword.xaml</DependentUpon>
     </Compile>
     <Compile Include="frames\TablesResultPage.xaml.cs">
       <DependentUpon>TablesResultPage.xaml</DependentUpon>
