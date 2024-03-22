@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace gruppovyxa.frames
 {
     /// <summary>
-    /// Логика взаимодействия для programmerCrossword.xaml
+    /// Логика взаимодействия для sequenceLawyer.xaml
     /// </summary>
-    public partial class programmerCrossword : Page
+    public partial class sequenceLawyer : Page
     {
-        public programmerCrossword()
+        public sequenceLawyer()
         {
             InitializeComponent();
         }

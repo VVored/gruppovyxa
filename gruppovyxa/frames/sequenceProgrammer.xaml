@@ -1,0 +1,33 @@
+﻿<Page x:Class="gruppovyxa.frames.sequenceProgrammer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:gruppovyxa.frames"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="sequenceProgrammer">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Margin="3, 0">Предпроектная подготовка</TextBlock>
+            <TextBlock Margin="3, 0">Проектирование структуры ПП</TextBlock>
+            <TextBlock Margin="3, 0">Кодирование</TextBlock>
+            <TextBlock Margin="3, 0">Документирование ПП</TextBlock>
+            <TextBlock Margin="3, 0">Эксплуатация ПП</TextBlock>
+            <TextBlock Margin="3, 0">Сопровождение ПП</TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox Margin="3, 0">Предпроектная подготовка</TextBox>
+            <TextBox Margin="3, 0">Проектирование структуры ПП</TextBox>
+            <TextBox Margin="3, 0">Кодирование</TextBox>
+            <TextBox Margin="3, 0">Документирование ПП</TextBox>
+            <TextBox Margin="3, 0">Эксплуатация ПП</TextBox>
+            <TextBox Margin="3, 0">Сопровождение ПП</TextBox>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace gruppovyxa.frames
+namespace gruppovyxa
 {
     /// <summary>
-    /// Логика взаимодействия для programmerCrossword.xaml
+    /// Логика взаимодействия для sequenceWindow.xaml
     /// </summary>
-    public partial class programmerCrossword : Page
+    public partial class sequenceWindow : Window
     {
-        public programmerCrossword()
+        public sequenceWindow()
         {
             InitializeComponent();
         }

@@ -55,7 +55,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="frames\sequenceLawyer.xaml.cs">
+      <DependentUpon>sequenceLawyer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frames\sequenceProgrammer.xaml.cs">
+      <DependentUpon>sequenceProgrammer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sequenceWindow.xaml.cs">
+      <DependentUpon>sequenceWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="CrosswordWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DragNDropWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -67,11 +80,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frames\doctorDragNDrop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frames\lawyerCrossword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frames\lawyerDragNDrop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frames\programmerCrossword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frames\sequenceLawyer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frames\sequenceProgrammer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -90,14 +119,23 @@
     <Compile Include="CrosswordWindow.xaml.cs">
       <DependentUpon>CrosswordWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DragNDropWindow.xaml.cs">
+      <DependentUpon>DragNDropWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="frames\ChooseProfessionPage.xaml.cs">
       <DependentUpon>ChooseProfessionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="frames\doctorCrossword.xaml.cs">
       <DependentUpon>doctorCrossword.xaml</DependentUpon>
     </Compile>
+    <Compile Include="frames\doctorDragNDrop.xaml.cs">
+      <DependentUpon>doctorDragNDrop.xaml</DependentUpon>
+    </Compile>
     <Compile Include="frames\lawyerCrossword.xaml.cs">
       <DependentUpon>lawyerCrossword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frames\lawyerDragNDrop.xaml.cs">
+      <DependentUpon>lawyerDragNDrop.xaml</DependentUpon>
     </Compile>
     <Compile Include="frames\programmerCrossword.xaml.cs">
       <DependentUpon>programmerCrossword.xaml</DependentUpon>
@@ -110,6 +148,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sequenceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -149,6 +191,17 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imgs\Parsec Games.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\humanBody.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\желудок.png" />
+    <Resource Include="imgs\кишечник.png" />
+    <Resource Include="imgs\легкие.png" />
+    <Resource Include="imgs\мозг.png" />
+    <Resource Include="imgs\печень.png" />
+    <Resource Include="imgs\сердце.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

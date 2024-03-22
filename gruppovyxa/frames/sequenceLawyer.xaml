@@ -1,0 +1,67 @@
+﻿<Page x:Class="gruppovyxa.frames.sequenceLawyer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:gruppovyxa.frames"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="sequenceLawyer">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <TextBlock FontSize="30" HorizontalAlignment="Center">ПОЛНОМОЧИЯ</TextBlock>
+            <ListBox Margin="10">
+                <ListBoxItem>
+                    <TextBlock>а) осуществление по обеспечению</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>б) обеспечение проведения в РФ единой финансовой политики</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>в) объявление амнистии</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>г) назначение и освобождение от должности Председателя Центрального банка РФ</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>д) присвоение почётных званий РФ</TextBlock>
+                </ListBoxItem>
+            </ListBox>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBlock TextWrapping="Wrap" FontSize="30" HorizontalAlignment="Center">СУБЪЕКТЫ ГОСУДАРСТВЕННОЙ ВЛАСТИ</TextBlock>
+            <ListBox Margin="10">
+                <ListBoxItem>
+                    <TextBlock>1) Государственная Дума</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>2) Правительство РФ</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock>3) Президент РФ</TextBlock>
+                </ListBoxItem>
+            </ListBox>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 0" HorizontalAlignment="Center">
+                    <TextBox Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">А</TextBox>
+                    <TextBox Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Б</TextBox>
+                    <TextBox Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">В</TextBox>
+                    <TextBox Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Г</TextBox>
+                    <TextBox Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Д</TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 0" HorizontalAlignment="Center">
+                    <TextBox Height="40" Width="40"></TextBox>
+                    <TextBox Height="40" Width="40"></TextBox>
+                    <TextBox Height="40" Width="40"></TextBox>
+                    <TextBox Height="40" Width="40"></TextBox>
+                    <TextBox Height="40" Width="40"></TextBox>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
