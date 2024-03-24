@@ -55,12 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="Controllers\CurrentCrosswordLadderDisplay.cs" />
+    <Compile Include="Controllers\CurrentDNDLadderDisplay.cs" />
+    <Compile Include="Controllers\CurrentOrderLadderDisplay.cs" />
     <Compile Include="frames\sequenceLawyer.xaml.cs">
       <DependentUpon>sequenceLawyer.xaml</DependentUpon>
     </Compile>
     <Compile Include="frames\sequenceProgrammer.xaml.cs">
       <DependentUpon>sequenceProgrammer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Ladder.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="sequenceWindow.xaml.cs">
       <DependentUpon>sequenceWindow.xaml</DependentUpon>
     </Compile>
