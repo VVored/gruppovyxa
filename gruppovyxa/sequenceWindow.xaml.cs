@@ -22,6 +22,7 @@ namespace gruppovyxa
         public sequenceWindow()
         {
             InitializeComponent();
+            frame.NavigationService.Navigate(new frames.sequenceProgrammer());
         }
     }
 }

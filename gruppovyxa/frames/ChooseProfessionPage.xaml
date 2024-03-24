@@ -20,9 +20,9 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Vertical" VerticalAlignment="Center">
-            <Button Margin="0, 0, 0, 15" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White">Программист</Button>
-            <Button Margin="0, 0, 0, 15" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White">Юрист</Button>
-            <Button Margin="0, 0, 0, 0" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White">Доктор</Button>
+            <Button Margin="0, 0, 0, 15" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White" Click="Programmer_Click">Программист</Button>
+            <Button Margin="0, 0, 0, 15" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White" Click="Lawer_Click">Юрист</Button>
+            <Button Margin="0, 0, 0, 0" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White" Click="Doctor_Click">Доктор</Button>
         </StackPanel>
     </Grid>
 </Page>

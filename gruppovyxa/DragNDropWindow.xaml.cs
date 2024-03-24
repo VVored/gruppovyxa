@@ -22,6 +22,8 @@ namespace gruppovyxa
         public DragNDropWindow()
         {
             InitializeComponent();
+            frame.NavigationService.Navigate(new frames.programmerDragNDrop());
+
         }
     }
 }

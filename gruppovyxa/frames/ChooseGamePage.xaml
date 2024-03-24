@@ -1,0 +1,28 @@
+﻿<Page x:Class="gruppovyxa.frames.ChooseGamePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:gruppovyxa.frames"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ChooseGamePage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Vertical" VerticalAlignment="Center">
+            <Button Margin="0, 0, 0, 15" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White" Click="Crossword_Click">Кросворд</Button>
+            <Button Margin="0, 0, 0, 15" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White" Click="DND_Click">DND</Button>
+            <Button Margin="0, 0, 0, 0" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White" Click="Sequence_Click">Последовательность</Button>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -17,4 +17,5 @@
         <Frame Grid.Row="1" Name="frame" Margin="0,0,-0.4,-0.4"></Frame>
         <Button Grid.Row="2" Margin="25, 15" HorizontalAlignment="Right" Padding="5" FontWeight="SemiBold" Background="Black" Foreground="White">Завершить этап</Button>
     </Grid>
+
 </Window>

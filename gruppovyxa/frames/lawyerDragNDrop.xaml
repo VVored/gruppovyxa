@@ -19,21 +19,21 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Height="314">
             <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0, 20" FontSize="15">Конституция создает основу для функционирования государства и общества, закрепляет общие принципы</TextBlock>
-            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0, 20" FontSize="15">Конституция возглавляет систему нормативных актов, связывая их в единую систему</TextBlock>
-            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0, 20" FontSize="15">Конституция предоставляет гражданам права и свободы, а также механизмы их защиты</TextBlock>
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0, 22" FontSize="15">Конституция возглавляет систему нормативных актов, связывая их в единую систему</TextBlock>
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0, 26" FontSize="15">Конституция предоставляет гражданам права и свободы, а также механизмы их защиты</TextBlock>
             <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0, 20" FontSize="15">Закрепляет основы мировоззрения, основные общественные ценности, например гуманизм, равенство, правосудие, патриотизм</TextBlock>
         </StackPanel>
-        <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Height="326" Width="152">
-            <TextBox Margin="0, 30" FontSize="15">Учредительная</TextBox>
-            <TextBox Margin="0, 30" FontSize="15">Системообразующая</TextBox>
-            <TextBox Margin="0, 30" FontSize="15">Правохранительная</TextBox>
-            <TextBox Margin="0, 30" FontSize="15">Мировозренческая</TextBox>
-        </StackPanel>
-        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Margin="30, 0">Учредительная</TextBlock>
-            <TextBlock Margin="30, 0">Системообразующая</TextBlock>
-            <TextBlock Margin="30, 0">Правохранительная</TextBlock>
-            <TextBlock Margin="30, 0">Мировозренческая</TextBlock>
-        </StackPanel>
+        <UniformGrid x:Name="grid1" Rows="4" Grid.Column="0" Grid.Row="0"  VerticalAlignment="Center" HorizontalAlignment="Center" Height="326" Width="152" AllowDrop="True" PreviewDragEnter="grid1_PreviewDragEnter"  PreviewDragOver="grid1_PreviewDragEnter"  Drop="grid1_Drop">
+            <TextBox Tag="0" IsReadOnly="True" Margin="0, 30" FontSize="15"/>
+            <TextBox Tag="0" IsReadOnly="True" Margin="0, 30" FontSize="15"/>
+            <TextBox Tag="0" IsReadOnly="True" Margin="0, 30" FontSize="15"/>
+            <TextBox Tag="0" IsReadOnly="True" Margin="0, 30" FontSize="15"/>
+        </UniformGrid>
+        <Canvas x:Name="canvas1" Grid.Row="1" Grid.ColumnSpan="2"  HorizontalAlignment="Center" VerticalAlignment="Center" AllowDrop="True"  Drop="canvas1_Drop" MouseDown="label1_MouseDown" DragEnter="canvas1_DragEnter" DragOver="canvas1_DragEnter">
+            <TextBlock Tag="4" Canvas.Left="-129" >Учредительная</TextBlock>
+            <TextBlock Tag="3" Canvas.Left="10">Системообразующая</TextBlock>
+            <TextBlock Tag="2" Canvas.Left="180">Правохранительная</TextBlock>
+            <TextBlock Tag="1" Canvas.Left="-298">Мировозренческая</TextBlock>
+        </Canvas>
     </Grid>
 </Page>

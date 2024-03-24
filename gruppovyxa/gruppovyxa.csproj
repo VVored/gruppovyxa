@@ -55,20 +55,42 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="Controllers\CurrentCrosswordLadderDisplay.cs" />
+    <Compile Include="Controllers\CurrentDNDLadderDisplay.cs" />
+    <Compile Include="Controllers\CurrentOrderLadderDisplay.cs" />
+    <Compile Include="DisplayElement.cs" />
+    <Compile Include="frames\ChooseGamePage.xaml.cs">
+      <DependentUpon>ChooseGamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frames\programmerDragNDrop.xaml.cs">
+      <DependentUpon>programmerDragNDrop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frames\sequenceDoctor.xaml.cs">
+      <DependentUpon>sequenceDoctor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="frames\sequenceLawyer.xaml.cs">
       <DependentUpon>sequenceLawyer.xaml</DependentUpon>
     </Compile>
     <Compile Include="frames\sequenceProgrammer.xaml.cs">
       <DependentUpon>sequenceProgrammer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Ladder.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Observer.cs" />
     <Compile Include="sequenceWindow.xaml.cs">
       <DependentUpon>sequenceWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Subject.cs" />
     <Page Include="CrosswordWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DragNDropWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frames\ChooseGamePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -93,6 +115,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="frames\programmerCrossword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frames\programmerDragNDrop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frames\sequenceDoctor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -202,6 +232,16 @@
     <Resource Include="imgs\мозг.png" />
     <Resource Include="imgs\печень.png" />
     <Resource Include="imgs\сердце.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\блок питания.png" />
+    <Resource Include="imgs\видюха.png" />
+    <Resource Include="imgs\жесткий.png" />
+    <Content Include="imgs\Запись 2024-03-23 212256.mp4" />
+    <Resource Include="imgs\корпус.png" />
+    <Resource Include="imgs\мать.png" />
+    <Resource Include="imgs\оперативка.png" />
+    <Resource Include="imgs\проц.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

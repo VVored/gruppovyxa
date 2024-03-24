@@ -1,0 +1,35 @@
+﻿<Page x:Class="gruppovyxa.frames.sequenceDoctor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:gruppovyxa.frames"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="sequenceDoctor">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Canvas Height="100" Width="800" x:Name="canvas1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" AllowDrop="True"  Drop="canvas1_Drop" MouseDown="label1_MouseDown" DragEnter="canvas1_DragEnter" DragOver="canvas1_DragEnter">
+            <TextBlock Tag="1" Canvas.Left="10" Canvas.Top="19">Царство</TextBlock>
+            <TextBlock Tag="2" Canvas.Left="570" Canvas.Top="19">Отдел</TextBlock>
+            <TextBlock Tag="3" Canvas.Left="404" Canvas.Top="19">Класс</TextBlock>
+            <TextBlock Tag="4" Canvas.Left="454" Canvas.Top="59">Порядок</TextBlock>
+            <TextBlock Tag="5" Canvas.Left="237" Canvas.Top="19">Семейство</TextBlock>
+            <TextBlock Tag="6" Canvas.Left="146" Canvas.Top="59">Род</TextBlock>
+            <TextBlock Tag="7" Canvas.Left="312" Canvas.Top="59">Вид</TextBlock>
+        </Canvas>
+        <UniformGrid x:Name="grid1" Rows="7" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" AllowDrop="True" PreviewDragEnter="grid1_PreviewDragEnter"  PreviewDragOver="grid1_PreviewDragEnter"  Drop="grid1_Drop">
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+        </UniformGrid>
+    </Grid>
+</Page>

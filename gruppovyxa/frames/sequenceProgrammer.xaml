@@ -13,21 +13,21 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Margin="3, 0">Предпроектная подготовка</TextBlock>
-            <TextBlock Margin="3, 0">Проектирование структуры ПП</TextBlock>
-            <TextBlock Margin="3, 0">Кодирование</TextBlock>
-            <TextBlock Margin="3, 0">Документирование ПП</TextBlock>
-            <TextBlock Margin="3, 0">Эксплуатация ПП</TextBlock>
-            <TextBlock Margin="3, 0">Сопровождение ПП</TextBlock>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBox Margin="3, 0">Предпроектная подготовка</TextBox>
-            <TextBox Margin="3, 0">Проектирование структуры ПП</TextBox>
-            <TextBox Margin="3, 0">Кодирование</TextBox>
-            <TextBox Margin="3, 0">Документирование ПП</TextBox>
-            <TextBox Margin="3, 0">Эксплуатация ПП</TextBox>
-            <TextBox Margin="3, 0">Сопровождение ПП</TextBox>
-        </StackPanel>
+        <Canvas Height="100" Width="800" x:Name="canvas1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" AllowDrop="True"  Drop="canvas1_Drop" MouseDown="label1_MouseDown" DragEnter="canvas1_DragEnter" DragOver="canvas1_DragEnter">
+            <TextBlock Tag="1" Canvas.Left="10" Canvas.Top="19">Предпроектная подготовка</TextBlock>
+            <TextBlock Tag="2" Canvas.Left="570" Canvas.Top="19">Проектирование структуры ПП</TextBlock>
+            <TextBlock Tag="3" Canvas.Left="404" Canvas.Top="19">Кодирование</TextBlock>
+            <TextBlock Tag="4" Canvas.Left="454" Canvas.Top="59">Документирование ПП</TextBlock>
+            <TextBlock Tag="5" Canvas.Left="237" Canvas.Top="19">Эксплуатация ПП</TextBlock>
+            <TextBlock Tag="6" Canvas.Left="146" Canvas.Top="59">Сопровождение ПП</TextBlock>
+        </Canvas>
+        <UniformGrid x:Name="grid1" Columns="6" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" AllowDrop="True" PreviewDragEnter="grid1_PreviewDragEnter"  PreviewDragOver="grid1_PreviewDragEnter"  Drop="grid1_Drop">
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
+            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
+        </UniformGrid>
     </Grid>
 </Page>

@@ -24,5 +24,20 @@ namespace gruppovyxa.frames
         {
             InitializeComponent();
         }
+
+        private void Lawer_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new frames.ChooseGamePage());
+        }
+
+        private void Programmer_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new frames.ChooseGamePage());
+        }
+
+        private void Doctor_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new frames.ChooseGamePage());
+        }
     }
 }

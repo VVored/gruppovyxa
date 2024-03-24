@@ -24,5 +24,71 @@ namespace gruppovyxa.frames
         {
             InitializeComponent();
         }
+
+        private void canvas1_Drop(object sender, DragEventArgs e)
+        {
+            if (e.Source is Canvas)
+            {
+                TextBlock src = e.Data.GetData(typeof(TextBlock))
+                as TextBlock;
+            }
+        }
+
+        private void label1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            var t = e.Source as TextBlock;
+            if (t == null)
+                return;
+            if (e.ChangedButton == MouseButton.Left)
+                if (DragDrop.DoDragDrop(t, t, DragDropEffects.All) ==
+                DragDropEffects.Move)
+                    t.Visibility = Visibility.Hidden;
+
+            string s = "";
+            for (int i = 0; i < 8; i++)
+            {
+
+                s += (grid1.Children[0] as TextBox).Text;
+            }
+            if (s == "")
+                return;
+        }
+
+        private void canvas1_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Handled = true;
+            e.Effects = DragDropEffects.Move;
+            var trg = e.Source as TextBlock;
+            if (trg == null)
+                return;
+
+        }
+
+        int a;
+
+        private void grid1_Drop(object sender, DragEventArgs e)
+        {
+
+            var trg = e.Source as TextBox;
+            if (trg == null)
+                return;
+            var src = e.Data.GetData(typeof(TextBlock)) as TextBlock;
+            trg.Text = src.Text;
+            trg.Tag = src.Tag;
+            a = int.Parse((string)src.Tag);
+            src.Visibility = Visibility.Hidden;
+        }
+
+
+        private void grid1_PreviewDragEnter(object sender, DragEventArgs e)
+        {
+            var trg = e.Source as TextBox;
+            if (trg == null)
+                return;
+            e.Handled = true;
+            e.Effects = trg.Text == "" ?
+            DragDropEffects.Move : DragDropEffects.None;
+
+        }
     }
 }
