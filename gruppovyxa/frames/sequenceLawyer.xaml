@@ -48,18 +48,18 @@
             </ListBox>
             <StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 0" HorizontalAlignment="Center">
-                    <TextBox Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">А</TextBox>
-                    <TextBox Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Б</TextBox>
-                    <TextBox Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">В</TextBox>
-                    <TextBox Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Г</TextBox>
-                    <TextBox Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Д</TextBox>
+                    <TextBox IsReadOnly="True" Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">А</TextBox>
+                    <TextBox IsReadOnly="True" Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Б</TextBox>
+                    <TextBox IsReadOnly="True" Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">В</TextBox>
+                    <TextBox IsReadOnly="True" Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Г</TextBox>
+                    <TextBox IsReadOnly="True" Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Д</TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 0" HorizontalAlignment="Center">
-                    <TextBox Height="40" Width="40"></TextBox>
-                    <TextBox Height="40" Width="40"></TextBox>
-                    <TextBox Height="40" Width="40"></TextBox>
-                    <TextBox Height="40" Width="40"></TextBox>
-                    <TextBox Height="40" Width="40"></TextBox>
+                    <TextBox IsReadOnly="True" Height="40" Width="40"></TextBox>
+                    <TextBox IsReadOnly="True" Height="40" Width="40"></TextBox>
+                    <TextBox IsReadOnly="True" Height="40" Width="40"></TextBox>
+                    <TextBox IsReadOnly="True" Height="40" Width="40"></TextBox>
+                    <TextBox IsReadOnly="True" Height="40" Width="40"></TextBox>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

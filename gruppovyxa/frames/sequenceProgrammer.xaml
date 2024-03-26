@@ -22,12 +22,12 @@
             <TextBlock Tag="6" Canvas.Left="146" Canvas.Top="59">Сопровождение ПП</TextBlock>
         </Canvas>
         <UniformGrid x:Name="grid1" Columns="6" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" AllowDrop="True" PreviewDragEnter="grid1_PreviewDragEnter"  PreviewDragOver="grid1_PreviewDragEnter"  Drop="grid1_Drop">
-            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
-            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
-            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
-            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
-            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
-            <TextBox Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
+            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
+            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
+            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
+            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
+            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
+            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,0"/>
         </UniformGrid>
     </Grid>
 </Page>
