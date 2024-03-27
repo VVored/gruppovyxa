@@ -18,7 +18,7 @@ namespace gruppovyxa.frames
     /// <summary>
     /// Логика взаимодействия для sequenceProgrammer.xaml
     /// </summary>
-    public partial class sequenceProgrammer : Page
+    public partial class sequenceProgrammer : Page, IResultCheck
     {
         public double ball;
 
@@ -95,12 +95,12 @@ namespace gruppovyxa.frames
 
         public void ResultCheck()
         {
-            if (tb1.Text == "Предпроектная подготовка") ball += 1.7;
-            if (tb2.Text == "Проектирование структуры ПП") ball += 1.7;
-            if (tb3.Text == "Кодирование") ball += 1.7;
-            if (tb4.Text == "Документирование ПП") ball += 1.7;
-            if (tb5.Text == "Эксплуатация ПП") ball += 1.7;
-            if (tb6.Text == "Сопровождение ПП") ball += 1.7;
+            if (tb1.Text == "Предпроектная подготовка") Controllers.Controller.currentBall += 1.7;
+            if (tb2.Text == "Проектирование структуры ПП") Controllers.Controller.currentBall += 1.7;
+            if (tb3.Text == "Кодирование") Controllers.Controller.currentBall += 1.7;
+            if (tb4.Text == "Документирование ПП") Controllers.Controller.currentBall += 1.7;
+            if (tb5.Text == "Эксплуатация ПП") Controllers.Controller.currentBall += 1.7;
+            if (tb6.Text == "Сопровождение ПП") Controllers.Controller.currentBall += 1.7;
         }
     }
 }

@@ -24,7 +24,7 @@
             <Frame Margin="20" Grid.Row="0" Grid.Column="0" Name="crossFrame"></Frame>
             <ListBox Margin="20" Grid.Row="0" Grid.Column="1" Name="listOfQuestions"></ListBox>
             <TextBox Grid.Row="1" Grid.ColumnSpan="2" Margin="300, 20"></TextBox>
-            <Button Grid.Row="1" Grid.ColumnSpan="2" Margin="25, 15" HorizontalAlignment="Right" Padding="5" FontWeight="SemiBold" Background="Black" Foreground="White">Завершить этап</Button>
+            <Button Grid.Row="1" Grid.ColumnSpan="2" Margin="25, 15" HorizontalAlignment="Right" Padding="5" FontWeight="SemiBold" Background="Black" Foreground="White"  Click="End_Click">Завершить этап</Button>
             <Button Grid.Row="1" Grid.ColumnSpan="2" Margin="200, 15" HorizontalAlignment="Right" Padding="25, 0" FontWeight="SemiBold" Background="Black" Foreground="White">Ввод</Button>
         </Grid>
     </Grid>

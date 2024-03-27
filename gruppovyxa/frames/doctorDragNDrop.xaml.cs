@@ -8,7 +8,7 @@ namespace gruppovyxa.frames
     /// <summary>
     /// Логика взаимодействия для doctorDragNDrop.xaml
     /// </summary>
-    public partial class doctorDragNDrop : Page
+    public partial class doctorDragNDrop : Page, IResultCheck
     {
         Point p;
         int maxz;
@@ -165,5 +165,10 @@ namespace gruppovyxa.frames
                 }
             }            
         }       
+
+        public void ResultCheck()
+        {
+            //
+        }
     }
 }

@@ -18,11 +18,16 @@ namespace gruppovyxa.frames
     /// <summary>
     /// Логика взаимодействия для lawyerCrossword.xaml
     /// </summary>
-    public partial class lawyerCrossword : Page
+    public partial class lawyerCrossword : Page, IResultCheck
     {
         public lawyerCrossword()
         {
             InitializeComponent();
+        }
+
+        public void ResultCheck()
+        {
+
         }
     }
 }

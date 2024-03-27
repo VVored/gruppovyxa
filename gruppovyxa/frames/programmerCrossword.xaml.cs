@@ -17,11 +17,16 @@ namespace gruppovyxa.frames
     /// <summary>
     /// Логика взаимодействия для programmerCrossword.xaml
     /// </summary>
-    public partial class programmerCrossword : Page
+    public partial class programmerCrossword : Page, IResultCheck
     {
         public programmerCrossword()
         {
             InitializeComponent();
+        }
+
+        public void ResultCheck()
+        {
+
         }
     }
 }

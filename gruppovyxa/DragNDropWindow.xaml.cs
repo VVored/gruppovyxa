@@ -19,18 +19,22 @@ namespace gruppovyxa
     /// </summary>
     public partial class DragNDropWindow : Window
     {
-        frames.lawyerDragNDrop stage = new frames.lawyerDragNDrop();
+        IResultCheck stage;
 
-        public DragNDropWindow()
+        public DragNDropWindow(IResultCheck stage)
         {
             InitializeComponent();
+
+            tbBall.Text = $"Количество баллов: {Math.Round(Controllers.Controller.currentBall)}";
+            this.stage = stage;
             frame.NavigationService.Navigate(stage);
         }
 
         private void End_Click(object sender, RoutedEventArgs e)
         {
             stage.ResultCheck();
-            tbBall.Text = $"Количество баллов: {Math.Round(stage.ball)}";
+
+            this.Close();
         }
     }
 }

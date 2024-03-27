@@ -9,6 +9,8 @@ namespace gruppovyxa.Controllers
 {
     public class Controller
     {
+        public static double currentBall = 0;
+
         public void UserSignIn(object sender, RoutedEventArgs e)
         {
 

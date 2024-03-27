@@ -18,11 +18,16 @@ namespace gruppovyxa.frames
     /// <summary>
     /// Логика взаимодействия для doctorCrossword.xaml
     /// </summary>
-    public partial class doctorCrossword : Page
+    public partial class doctorCrossword : Page, IResultCheck
     {
         public doctorCrossword()
         {
             InitializeComponent();
+        }
+
+        public void ResultCheck()
+        {
+
         }
     }
 }

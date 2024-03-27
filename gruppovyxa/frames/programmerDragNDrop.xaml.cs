@@ -18,7 +18,7 @@ namespace gruppovyxa.frames
     /// <summary>
     /// Логика взаимодействия для programmerDragNDrop.xaml
     /// </summary>
-    public partial class programmerDragNDrop : Page
+    public partial class programmerDragNDrop : Page, IResultCheck
     {
         Point p;
         int maxz;
@@ -72,6 +72,11 @@ namespace gruppovyxa.frames
                 (e.Source as FrameworkElement).ReleaseMouseCapture();
                 (e.Source as FrameworkElement).Cursor = null;
             }
+        }
+
+        public void ResultCheck()
+        {
+            //
         }
 
     }

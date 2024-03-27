@@ -19,18 +19,34 @@ namespace gruppovyxa
     /// </summary>
     public partial class sequenceWindow : Window
     {
-        frames.sequenceProgrammer stage = new frames.sequenceProgrammer();
+        IResultCheck stage;
 
-        public sequenceWindow()
+        public sequenceWindow(IResultCheck stage)
         {
             InitializeComponent();
+
+            tbBall.Text = $"Количество баллов: {Math.Round(Controllers.Controller.currentBall)}";
+            this.stage = stage;
             frame.NavigationService.Navigate(stage);
         }
 
         private void End_Click(object sender, RoutedEventArgs e)
         {
             stage.ResultCheck();
-            tbBall.Text = $"Количество баллов: {Math.Round(stage.ball)}";
+
+            IResultCheck nextStage;
+
+            if (stage.GetType() == typeof(frames.sequenceDoctor))
+                nextStage = new frames.doctorCrossword();
+            else if (stage.GetType() == typeof(frames.sequenceLawyer))
+                nextStage = new frames.lawyerCrossword();
+            else
+                nextStage = new frames.programmerCrossword();
+
+            this.Close();
+
+            CrosswordWindow win = new CrosswordWindow(nextStage);
+            win.ShowDialog();
         }
     }
 }

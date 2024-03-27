@@ -18,7 +18,7 @@ namespace gruppovyxa.frames
     /// <summary>
     /// Логика взаимодействия для lawyerDragNDrop.xaml
     /// </summary>
-    public partial class lawyerDragNDrop : Page
+    public partial class lawyerDragNDrop : Page, IResultCheck
     {
         public lawyerDragNDrop()
         {
@@ -96,10 +96,10 @@ namespace gruppovyxa.frames
 
         public void ResultCheck()
         {
-            if (tb1.Text == "Мировозренческая") ball += 2.5;
-            if (tb2.Text == "Правохранительная") ball += 2.5;
-            if (tb3.Text == "Системообразующая") ball += 2.5;
-            if (tb4.Text == "Учредительная") ball += 2.5;
+            if (tb1.Text == "Мировозренческая") Controllers.Controller.currentBall += 2.5;
+            if (tb2.Text == "Правохранительная") Controllers.Controller.currentBall += 2.5;
+            if (tb3.Text == "Системообразующая") Controllers.Controller.currentBall += 2.5;
+            if (tb4.Text == "Учредительная") Controllers.Controller.currentBall += 2.5;
         }
 
         

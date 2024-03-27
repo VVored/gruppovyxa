@@ -18,7 +18,7 @@ namespace gruppovyxa.frames
     /// <summary>
     /// Логика взаимодействия для sequenceLawyer.xaml
     /// </summary>
-    public partial class sequenceLawyer : Page
+    public partial class sequenceLawyer : Page, IResultCheck
     {
         public double ball;
 
@@ -29,11 +29,11 @@ namespace gruppovyxa.frames
 
         public void ResultCheck()
         {
-            if (tb1.Text == "2") ball += 2;
-            if (tb2.Text == "2") ball += 2;
-            if (tb3.Text == "1") ball += 2;
-            if (tb4.Text == "1") ball += 2;
-            if (tb5.Text == "3") ball += 2;
+            if (tb1.Text == "2") Controllers.Controller.currentBall += 2;
+            if (tb2.Text == "2") Controllers.Controller.currentBall += 2;
+            if (tb3.Text == "1") Controllers.Controller.currentBall += 2;
+            if (tb4.Text == "1") Controllers.Controller.currentBall += 2;
+            if (tb5.Text == "3") Controllers.Controller.currentBall += 2;
         }
     }
 }

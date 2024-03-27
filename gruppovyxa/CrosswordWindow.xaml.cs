@@ -19,9 +19,31 @@ namespace gruppovyxa
     /// </summary>
     public partial class CrosswordWindow : Window
     {
-        public CrosswordWindow()
+        IResultCheck stage;
+
+        public CrosswordWindow(IResultCheck stage)
         {
             InitializeComponent();
+
+            this.stage = stage;
+            crossFrame.NavigationService.Navigate(stage);
+        }
+
+        private void End_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+            IResultCheck nextStage;
+
+            if (stage.GetType() == typeof(frames.doctorCrossword))
+                nextStage = new frames.doctorDragNDrop();
+            else if (stage.GetType() == typeof(frames.lawyerCrossword))
+                nextStage = new frames.lawyerDragNDrop();
+            else
+                nextStage = new frames.programmerDragNDrop();
+
+            DragNDropWindow win = new DragNDropWindow(nextStage);
+            win.ShowDialog();
         }
     }
 }
