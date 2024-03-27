@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace gruppovyxa.frames
 {
@@ -22,6 +12,9 @@ namespace gruppovyxa.frames
     {
         Point p;
         int maxz;
+        public double ball;
+        double x;
+        double y;
 
         public doctorDragNDrop()
         {
@@ -72,6 +65,105 @@ namespace gruppovyxa.frames
                 (e.Source as FrameworkElement).ReleaseMouseCapture();
                 (e.Source as FrameworkElement).Cursor = null;
             }
-        }
+
+            //++баллы если отпустил элемент в нужном месте (сделайте норм масштаб для окон, а то у меня канвас не совпадает в полном экране с разметкой в xaml)
+
+            if (a.Name == "brain")
+            {
+                x = Canvas.GetLeft(brain);
+                y = Canvas.GetTop(brain);
+                if (x >= 352 & y >= 2 & x <= 391 & y <= 40 & a.Tag != "1")
+                {
+                    ball += 1.7;
+                    a.Tag = "1";                    
+                }
+                else if (a.Tag == "1")
+                {
+                    ball -= 1.7;
+                    a.Tag = "0";
+                }
+
+            }
+
+            if (a.Name == "heart")
+            {
+                x = Canvas.GetLeft(heart);
+                y = Canvas.GetTop(heart);
+                if (x >= 368 & y >= 132 & x <= 390 & y <= 150 & a.Tag != "1")
+                {
+                    ball += 1.7;
+                    a.Tag = "1";
+                }
+                else if (a.Tag == "1")
+                {
+                    ball -= 1.7;
+                    a.Tag = "0";
+                }
+            }
+
+            if (a.Name == "liver")
+            {
+                x = Canvas.GetLeft(liver);
+                y = Canvas.GetTop(liver);
+                if (x >= 348 & y >= 184 & x <= 357 & y <= 190 & a.Tag != "1")
+                {
+                    ball += 1.7;
+                    a.Tag = "1";
+                }
+                else if (a.Tag == "1")
+                {
+                    ball -= 1.7;
+                    a.Tag = "0";
+                }
+            }
+
+            if (a.Name == "stomach")
+            {
+                x = Canvas.GetLeft(stomach);
+                y = Canvas.GetTop(stomach);
+                if (x >= 366 & y >= 187 & x <= 394 & y <= 196 & a.Tag != "1")
+                {
+                    ball += 1.7;
+                    a.Tag = "1";
+                }
+                else if (a.Tag == "1")
+                {
+                    ball -= 1.7;
+                    a.Tag = "0";
+                }
+            }
+
+            if (a.Name == "intestines")
+            {
+                x = Canvas.GetLeft(intestines);
+                y = Canvas.GetTop(intestines);
+                if (x >= 350 & y >= 222 & x <= 394 & y <= 250 & a.Tag != "1")
+                {
+                    ball += 1.7;
+                    a.Tag = "1";
+                }
+                else if (a.Tag == "1")
+                {
+                    ball -= 1.7;
+                    a.Tag = "0";
+                }
+            }
+
+            if (a.Name == "lungs")
+            {
+                x = Canvas.GetLeft(lungs);
+                y = Canvas.GetTop(lungs);
+                if (x >= 350 & y >= 112 & x <= 381 & y <= 132 & a.Tag != "1")
+                {
+                    ball += 1.7;
+                    a.Tag = "1";
+                }
+                else if (a.Tag == "1")
+                {
+                    ball -= 1.7;
+                    a.Tag = "0";
+                }
+            }            
+        }       
     }
 }

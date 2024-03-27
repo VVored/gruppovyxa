@@ -55,11 +55,11 @@
                     <TextBox IsReadOnly="True" Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Д</TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 0" HorizontalAlignment="Center">
-                    <TextBox IsReadOnly="True" Height="40" Width="40"></TextBox>
-                    <TextBox IsReadOnly="True" Height="40" Width="40"></TextBox>
-                    <TextBox IsReadOnly="True" Height="40" Width="40"></TextBox>
-                    <TextBox IsReadOnly="True" Height="40" Width="40"></TextBox>
-                    <TextBox IsReadOnly="True" Height="40" Width="40"></TextBox>
+                    <TextBox x:Name="tb1" TextAlignment="Center" Padding="0,10"  Height="40" Width="40"></TextBox>
+                    <TextBox x:Name="tb2" TextAlignment="Center" Padding="0,10" Height="40" Width="40"></TextBox>
+                    <TextBox x:Name="tb3" TextAlignment="Center" Padding="0,10" Height="40" Width="40"></TextBox>
+                    <TextBox x:Name="tb4" TextAlignment="Center" Padding="0,10" Height="40" Width="40"></TextBox>
+                    <TextBox x:Name="tb5" TextAlignment="Center" Padding="0,10" Height="40" Width="40"></TextBox>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

@@ -25,11 +25,35 @@ namespace gruppovyxa
             InitializeComponent();
         }
 
+        int a;
+
+        private void SMS_Click(object sender, RoutedEventArgs e)
+        {
+            Random ran = new Random();
+            a = ran.Next(1111, 9999);
+            MessageBox.Show(a.ToString());
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Menu menu = new Menu();
-            menu.Show();
-            this.Close();
-        }
+            try
+            {
+                if (name.Text == "") throw new Exception("Введите Ваше имя");
+                if (phone.Text == "") throw new Exception("Введите Ваш номер телефона");
+                if (smscod.Text == "") throw new Exception("Введите код из СМС");
+                if (int.Parse(smscod.Text) != a) throw new Exception("Код из СМС неверный");
+
+                Controllers.Controller controller = new Controllers.Controller();
+                
+                Menu menu = new Menu();
+                menu.Show();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+        } 
     }
 }

@@ -20,6 +20,8 @@ namespace gruppovyxa.frames
     /// </summary>
     public partial class sequenceProgrammer : Page
     {
+        public double ball;
+
         public sequenceProgrammer()
         {
             InitializeComponent();
@@ -89,6 +91,16 @@ namespace gruppovyxa.frames
             e.Effects = trg.Text == "" ?
             DragDropEffects.Move : DragDropEffects.None;
 
+        }
+
+        public void ResultCheck()
+        {
+            if (tb1.Text == "Предпроектная подготовка") ball += 1.7;
+            if (tb2.Text == "Проектирование структуры ПП") ball += 1.7;
+            if (tb3.Text == "Кодирование") ball += 1.7;
+            if (tb4.Text == "Документирование ПП") ball += 1.7;
+            if (tb5.Text == "Эксплуатация ПП") ball += 1.7;
+            if (tb6.Text == "Сопровождение ПП") ball += 1.7;
         }
     }
 }

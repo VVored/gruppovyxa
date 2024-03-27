@@ -25,6 +25,9 @@ namespace gruppovyxa.frames
             InitializeComponent();
         }
 
+        public double ball;
+
+
         private void canvas1_Drop(object sender, DragEventArgs e)
         {
             if (e.Source is Canvas)
@@ -76,7 +79,7 @@ namespace gruppovyxa.frames
             trg.Text = src.Text;
             trg.Tag = src.Tag;
             a = int.Parse((string)src.Tag);
-            src.Visibility = Visibility.Hidden;
+            src.Visibility = Visibility.Hidden;           
         }
 
 
@@ -90,5 +93,15 @@ namespace gruppovyxa.frames
             DragDropEffects.Move : DragDropEffects.None;
 
         }
+
+        public void ResultCheck()
+        {
+            if (tb1.Text == "Мировозренческая") ball += 2.5;
+            if (tb2.Text == "Правохранительная") ball += 2.5;
+            if (tb3.Text == "Системообразующая") ball += 2.5;
+            if (tb4.Text == "Учредительная") ball += 2.5;
+        }
+
+        
     }
 }

@@ -60,9 +60,6 @@
     <Compile Include="Controllers\CurrentDNDLadderDisplay.cs" />
     <Compile Include="Controllers\CurrentOrderLadderDisplay.cs" />
     <Compile Include="DisplayElement.cs" />
-    <Compile Include="frames\ChooseGamePage.xaml.cs">
-      <DependentUpon>ChooseGamePage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="frames\programmerDragNDrop.xaml.cs">
       <DependentUpon>programmerDragNDrop.xaml</DependentUpon>
     </Compile>
@@ -87,10 +84,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DragNDropWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="frames\ChooseGamePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

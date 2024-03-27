@@ -11,13 +11,14 @@
     <Grid>
         <Image Source="../imgs/humanBody.png" Margin="-118,-54,-112,-154.4"/>
         <Canvas Width="800" Height="450" x:Name="canvas1" PreviewMouseDown="rect1_MouseDown" PreviewMouseMove="rect1_MouseMove"  PreviewMouseUp="rect1_MouseUp">
-            <Image Source="../imgs/желудок.png" Height="40" Canvas.Left="80" Canvas.Top="50"></Image>
-            <Image Source="../imgs/кишечник.png" Height="40" Canvas.Left="80" Canvas.Top="150"></Image>
-            <Image Source="../imgs/легкие.png" Height="40" Canvas.Left="80" Canvas.Top="250"></Image>
+            <Image x:Name="stomach" Source="../imgs/желудок.png" Height="40" Canvas.Left="80" Canvas.Top="50"></Image>
+            <Image x:Name="intestines" Source="../imgs/кишечник.png" Height="40" Canvas.Left="80" Canvas.Top="150"></Image>
+            <Image x:Name="lungs" Source="../imgs/легкие.png" Height="40" Canvas.Left="80" Canvas.Top="250"></Image>
 
-            <Image Source="../imgs/мозг.png" Height="40" Canvas.Left="698" Canvas.Top="50"></Image>
-            <Image Source="../imgs/печень.png" Height="40" Canvas.Left="698" Canvas.Top="150"></Image>
-            <Image Source="../imgs/сердце.png" Height="40" Canvas.Left="698" Canvas.Top="250"></Image>
+            <Image Tag="0" x:Name="brain" Source="../imgs/мозг.png" Height="40" Canvas.Left="698" Canvas.Top="50"></Image>
+            <Image Tag="0" x:Name="liver" Source="../imgs/печень.png" Height="40" Canvas.Left="698" Canvas.Top="150"></Image>
+            <Image Tag="0" x:Name="heart" Source="../imgs/сердце.png" Height="40" Canvas.Left="698" Canvas.Top="250"></Image>
         </Canvas>
+
     </Grid>
 </Page>

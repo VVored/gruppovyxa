@@ -19,10 +19,18 @@ namespace gruppovyxa
     /// </summary>
     public partial class sequenceWindow : Window
     {
+        frames.sequenceProgrammer stage = new frames.sequenceProgrammer();
+
         public sequenceWindow()
         {
             InitializeComponent();
-            frame.NavigationService.Navigate(new frames.sequenceProgrammer());
+            frame.NavigationService.Navigate(stage);
+        }
+
+        private void End_Click(object sender, RoutedEventArgs e)
+        {
+            stage.ResultCheck();
+            tbBall.Text = $"Количество баллов: {Math.Round(stage.ball)}";
         }
     }
 }

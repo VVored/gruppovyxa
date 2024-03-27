@@ -23,13 +23,13 @@
             <TextBlock Tag="7" Canvas.Left="312" Canvas.Top="59">Вид</TextBlock>
         </Canvas>
         <UniformGrid x:Name="grid1" Rows="7" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" AllowDrop="True" PreviewDragEnter="grid1_PreviewDragEnter"  PreviewDragOver="grid1_PreviewDragEnter"  Drop="grid1_Drop">
-            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
-            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
-            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
-            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
-            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
-            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
-            <TextBox IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox x:Name="tb1" IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox x:Name="tb2" IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox x:Name="tb3" IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox x:Name="tb4" IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox x:Name="tb5" IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox x:Name="tb6" IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
+            <TextBox x:Name="tb7" IsReadOnly="True" Tag="0" MinWidth="120" Width="auto" Margin="3,3"/>
         </UniformGrid>
     </Grid>
 </Page>

@@ -24,10 +24,10 @@
             <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0, 20" FontSize="15">Закрепляет основы мировоззрения, основные общественные ценности, например гуманизм, равенство, правосудие, патриотизм</TextBlock>
         </StackPanel>
         <UniformGrid x:Name="grid1" Rows="4" Grid.Column="0" Grid.Row="0"  VerticalAlignment="Center" HorizontalAlignment="Center" Height="326" Width="152" AllowDrop="True" PreviewDragEnter="grid1_PreviewDragEnter"  PreviewDragOver="grid1_PreviewDragEnter"  Drop="grid1_Drop">
-            <TextBox Tag="0" IsReadOnly="True" Margin="0, 30" FontSize="15"/>
-            <TextBox Tag="0" IsReadOnly="True" Margin="0, 30" FontSize="15"/>
-            <TextBox Tag="0" IsReadOnly="True" Margin="0, 30" FontSize="15"/>
-            <TextBox Tag="0" IsReadOnly="True" Margin="0, 30" FontSize="15"/>
+            <TextBox x:Name="tb4" Tag="0" IsReadOnly="True" Margin="0, 30" FontSize="15"/>
+            <TextBox x:Name="tb3" Tag="0" IsReadOnly="True" Margin="0, 30" FontSize="15"/>
+            <TextBox x:Name="tb2" Tag="0" IsReadOnly="True" Margin="0, 30" FontSize="15"/>
+            <TextBox x:Name="tb1" Tag="0" IsReadOnly="True" Margin="0, 30" FontSize="15"/>
         </UniformGrid>
         <Canvas x:Name="canvas1" Grid.Row="1" Grid.ColumnSpan="2"  HorizontalAlignment="Center" VerticalAlignment="Center" AllowDrop="True"  Drop="canvas1_Drop" MouseDown="label1_MouseDown" DragEnter="canvas1_DragEnter" DragOver="canvas1_DragEnter">
             <TextBlock Tag="4" Canvas.Left="-129" >Учредительная</TextBlock>

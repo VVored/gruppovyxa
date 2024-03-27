@@ -20,6 +20,8 @@ namespace gruppovyxa.frames
     /// </summary>
     public partial class sequenceDoctor : Page
     {
+        public double ball;
+
         public sequenceDoctor()
         {
             InitializeComponent();
@@ -89,6 +91,17 @@ namespace gruppovyxa.frames
             e.Effects = trg.Text == "" ?
             DragDropEffects.Move : DragDropEffects.None;
 
+        }
+
+        public void ResultCheck()
+        {
+            if (tb1.Text == "Царство") ball += 1.5;
+            if (tb2.Text == "Отдел") ball += 1.5;
+            if (tb3.Text == "Класс") ball += 1.5;
+            if (tb4.Text == "Порядок") ball += 1.5;
+            if (tb5.Text == "Семейство") ball += 1.5;
+            if (tb6.Text == "Род") ball += 1.5;
+            if (tb7.Text == "Вид") ball += 1.5;
         }
 
     }
