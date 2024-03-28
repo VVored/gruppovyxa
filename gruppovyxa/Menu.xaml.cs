@@ -19,9 +19,13 @@ namespace gruppovyxa
     /// </summary>
     public partial class Menu : Window
     {
-        public Menu()
+        Models.User user = new Models.User();
+        Controllers.Controller controller = new Controllers.Controller();
+        public Menu(Models.User user, Controllers.Controller controller)
         {
             InitializeComponent();
+            this.user = user;
+            this.controller = controller;
         }
 
         private void Back(object sender, RoutedEventArgs e)
@@ -31,12 +35,12 @@ namespace gruppovyxa
 
         private void chooseProf(object sender, RoutedEventArgs e)
         {
-            frame.NavigationService.Navigate(new frames.ChooseProfessionPage());
+            frame.NavigationService.Navigate(new frames.ChooseProfessionPage(user, controller));
         }
 
         private void rating(object sender, RoutedEventArgs e)
         {
-            frame.NavigationService.Navigate(new frames.TablesResultPage());
+            frame.NavigationService.Navigate(new frames.TablesResultPage(user, controller));
         }
     }
 }

@@ -20,13 +20,13 @@
             <StackPanel Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
                 <TextBlock Padding="50, 10" FontSize="25" FontWeight="SemiBold">Авторизация</TextBlock>
                 <TextBlock Padding="30, 0" FontSize="20" FontWeight="SemiBold">Имя:</TextBlock>
-                <TextBox Margin="30, 0" FontSize="20"></TextBox>
+                <TextBox Margin="30, 0" FontSize="20" x:Name="Username"></TextBox>
                 <TextBlock Padding="30, 0" FontSize="20" FontWeight="SemiBold">Номер телефона:</TextBlock>
                 <TextBox Margin="30, 0" FontSize="20"></TextBox>
                 <TextBlock Padding="30, 0" FontSize="20" FontWeight="SemiBold">Код из СМС:</TextBlock>
                 <TextBox Margin="30, 0" FontSize="20"></TextBox>
                 <Button Margin="90, 10" FontSize="10" FontWeight="SemiBold" BorderBrush="Black" Padding="5" Background="White">Отправить СМС</Button>
-                <Button Margin="90, 0, 90, 15" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White">Войти</Button>
+                <Button Margin="90, 0, 90, 15" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White" Click="UserSignIn">Войти</Button>
             </StackPanel>
         </Border>
     </Grid>

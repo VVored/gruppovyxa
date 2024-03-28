@@ -56,20 +56,30 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Controllers\Controller.cs" />
-    <Compile Include="Controllers\CurrentCrosswordLadderDisplay.cs" />
-    <Compile Include="Controllers\CurrentDNDLadderDisplay.cs" />
-    <Compile Include="Controllers\CurrentOrderLadderDisplay.cs" />
+    <Compile Include="frames\doctorCrosswordHard.xaml.cs">
+      <DependentUpon>doctorCrosswordHard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frames\lawyerCrosswordHard.xaml.cs">
+      <DependentUpon>lawyerCrosswordHard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frames\programmerCrosswordHard.xaml.cs">
+      <DependentUpon>programmerCrosswordHard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="frames\sequenceLawyer.xaml.cs">
       <DependentUpon>sequenceLawyer.xaml</DependentUpon>
     </Compile>
     <Compile Include="frames\sequenceProgrammer.xaml.cs">
       <DependentUpon>sequenceProgrammer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HintWindow.xaml.cs">
+      <DependentUpon>HintWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Ladder.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="sequenceWindow.xaml.cs">
       <DependentUpon>sequenceWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Timer.cs" />
     <Page Include="CrosswordWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -86,6 +96,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frames\doctorCrosswordHard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frames\doctorDragNDrop.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -94,11 +108,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frames\lawyerCrosswordHard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frames\lawyerDragNDrop.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="frames\programmerCrossword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frames\programmerCrosswordHard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,6 +133,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="frames\TablesResultPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HintWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using gruppovyxa.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,11 +21,28 @@ namespace gruppovyxa
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Controllers.Controller controller;
         public MainWindow()
         {
             InitializeComponent();
-            CrosswordWindow crosswordWindow = new CrosswordWindow();
-            crosswordWindow.Show();
+
+            controller = new Controllers.Controller();
+        }
+
+        private void UserSignIn(object sender, RoutedEventArgs e)
+        {
+            User user = controller.AuthenticateUser(Username.Text);
+
+            if (user != null)
+            {
+                Menu menu = new Menu(user, controller);
+                menu.Show();
+            }
+            else
+            {
+                MessageBox.Show("Пользователь не найден!");
+            }
+
         }
     }
 }

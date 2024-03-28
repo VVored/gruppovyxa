@@ -5,12 +5,28 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:gruppovyxa.frames"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="550"
       Title="TablesResultPage">
 
     <Grid>
-        <TextBlock FontSize="30" Margin="0, 0">Результаты профессий</TextBlock>
-        <DataGrid Margin="0, 30, 0, 0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBlock Grid.Row="0" FontSize="23" Margin="5 0 0 0" VerticalAlignment="Center">Результаты</TextBlock>
+            <Button Grid.Row="0" x:Name="prog" Grid.Column="0" Width="110" Height="30" Margin="20 0 0 0" Padding="5" FontWeight="SemiBold" Background="Black" Foreground="White" Click="prog_Click">Программисты</Button>
+            <Button Grid.Row="0" x:Name="law" Grid.Column="0" Width="110" Height="30" Margin="15 0 0 0" Padding="5" FontWeight="SemiBold" Background="Black" Foreground="White" Click="law_Click">Юристы</Button>
+            <Button Grid.Row="0" x:Name="doc" Grid.Column="0" Width="110" Height="30" Margin="15 0 0 0" Padding="5" FontWeight="SemiBold" Background="Black" Foreground="White" Click="doc_Click" >Доктора</Button>
+        </StackPanel>
+
+        <DataGrid Grid.Row="1" x:Name="ladderDataGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Место" Binding="{Binding Place}" />
+                <DataGridTextColumn Header="Имя" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="Баллы" Binding="{Binding Points}" />
+                <!-- Add more columns as needed -->
+            </DataGrid.Columns>
         </DataGrid>
     </Grid>
 </Page>

@@ -12,18 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace gruppovyxa.frames
+namespace gruppovyxa
 {
     /// <summary>
-    /// Логика взаимодействия для programmerCrossword.xaml
+    /// Логика взаимодействия для HintWindow.xaml
     /// </summary>
-    public partial class programmerCrossword : Page
+    public partial class HintWindow : Window
     {
-
-        public programmerCrossword()
+        public HintWindow()
         {
             InitializeComponent();
-            
         }
     }
 }
