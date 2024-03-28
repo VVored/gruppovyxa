@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gruppovyxa"
         mc:Ignorable="d"
-        Title="Menu" Height="450" Width="800">
+        Title="Меню" Icon="imgs/Parsec Games.png" MinHeight="450" MinWidth="1000">
     <Grid Name="grid1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="76*"/>
             <ColumnDefinition Width="321*"/>
         </Grid.ColumnDefinitions>
-        <Image Source="imgs/image 1.png" Stretch="UniformToFill" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="0,0,-0.4,0" Width="794"></Image>
+        <Image Source="imgs/image 1.png" Stretch="UniformToFill" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="0,0,-0.4,0"></Image>
         <StackPanel Background="Black" Opacity="0.8" Grid.ColumnSpan="2" Margin="0,0,-0.4,0"></StackPanel>
 
         <StackPanel Background="White" Name="menu" Grid.Column="0">
@@ -48,3 +48,4 @@
         </Grid>
     </Grid>
 </Window>
+

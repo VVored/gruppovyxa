@@ -36,7 +36,7 @@ namespace gruppovyxa
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            try
+            /*try
             {
                 if (name.Text == "") throw new Exception("Введите Ваше имя");
                 if (phone.Text == "") throw new Exception("Введите Ваш номер телефона");
@@ -44,16 +44,16 @@ namespace gruppovyxa
                 if (int.Parse(smscod.Text) != a) throw new Exception("Код из СМС неверный");
 
                 Controllers.Controller controller = new Controllers.Controller();
-                
+*/
                 Menu menu = new Menu();
                 menu.Show();
                 this.Close();
-            }
+            /*}
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            
-        } 
+*/
+        }
     }
 }
