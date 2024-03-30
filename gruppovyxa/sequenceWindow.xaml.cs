@@ -37,16 +37,47 @@ namespace gruppovyxa
             IResultCheck nextStage;
 
             if (stage.GetType() == typeof(frames.sequenceDoctor))
-                nextStage = new frames.doctorCrossword();
+            {
+                nextStage = new frames.sequenceDoctorHard();
+                this.Close();
+
+                sequenceWindow win = new sequenceWindow(nextStage);
+                win.ShowDialog();
+            }
             else if (stage.GetType() == typeof(frames.sequenceLawyer))
-                nextStage = new frames.lawyerCrossword();
+            {
+                nextStage = new frames.sequenceLawyerHard();
+                this.Close();
+
+                sequenceWindow win = new sequenceWindow(nextStage);
+                win.ShowDialog();
+            }
+            else if (stage.GetType() == typeof(frames.sequenceProgrammer))
+            {
+                nextStage = new frames.sequenceProgrammerHard();
+                this.Close();
+
+                sequenceWindow win = new sequenceWindow(nextStage);
+                win.ShowDialog();
+            }
             else
-                nextStage = new frames.programmerCrossword();
+            {
+                if (stage.GetType() == typeof(frames.sequenceDoctorHard))
+                    nextStage = new frames.doctorCrossword();
+            else if (stage.GetType() == typeof(frames.sequenceLawyerHard))
+                    nextStage = new frames.lawyerCrossword();
+                else
+                    nextStage = new frames.programmerCrossword();
 
-            this.Close();
+                this.Close();
 
-            CrosswordWindow win = new CrosswordWindow(nextStage);
-            win.ShowDialog();
+                CrosswordWindow win = new CrosswordWindow(nextStage);
+                win.ShowDialog();
+            }
+
+
+
+            
         }
     }
 }

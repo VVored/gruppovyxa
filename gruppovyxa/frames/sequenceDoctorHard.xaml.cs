@@ -16,12 +16,11 @@ using System.Windows.Shapes;
 namespace gruppovyxa.frames
 {
     /// <summary>
-    /// Логика взаимодействия для sequenceDoctor.xaml
+    /// Логика взаимодействия для sequenceDoctorHard.xaml
     /// </summary>
-    public partial class sequenceDoctor : Page, IResultCheck
+    public partial class sequenceDoctorHard : Page, IResultCheck
     {
-
-        public sequenceDoctor()
+        public sequenceDoctorHard()
         {
             InitializeComponent();
         }
@@ -94,13 +93,13 @@ namespace gruppovyxa.frames
 
         public void ResultCheck()
         {
-            if (tb1.Text == "Царство") Controllers.Controller.currentBall += 1.5;
-            if (tb2.Text == "Отдел") Controllers.Controller.currentBall += 1.5;
-            if (tb3.Text == "Класс") Controllers.Controller.currentBall += 1.5;
-            if (tb4.Text == "Порядок") Controllers.Controller.currentBall += 1.5;
-            if (tb5.Text == "Семейство") Controllers.Controller.currentBall += 1.5;
-            if (tb6.Text == "Род") Controllers.Controller.currentBall += 1.5;
-            if (tb7.Text == "Вид") Controllers.Controller.currentBall += 1.5;
+            if (tb1.Text == "наложение жгута выше места повреждения") Controllers.Controller.currentBall += 1.5;
+            if (tb2.Text == "изменение положение тела, конечности") Controllers.Controller.currentBall += 1.5;
+            if (tb3.Text == "прижатие сосуда пальцем выше места повреждения") Controllers.Controller.currentBall += 1.5;
+            if (tb4.Text == "сгибание конечности, с использованием валика в месте сгиба") Controllers.Controller.currentBall += 1.5;
+            if (tb5.Text == "наложение зажима на сосуд") Controllers.Controller.currentBall += 1.5;
+            if (tb6.Text == "тампонада раны") Controllers.Controller.currentBall += 1.5;
+            if (tb7.Text == "наложение давящей повязки") Controllers.Controller.currentBall += 1.5;
         }
 
     }

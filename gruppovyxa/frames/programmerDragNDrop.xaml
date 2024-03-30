@@ -9,16 +9,14 @@
       Title="programmerDragNDrop">
 
     <Grid>
-        <Image Source="../imgs/корпус.png" Margin="47,58,57,9.6"/>
+        <Image Source="../imgs/корпус.png" Margin="-10,71,10,-71.4"/>
         <Canvas Width="800" Height="450" x:Name="canvas1" PreviewMouseDown="rect1_MouseDown" PreviewMouseMove="rect1_MouseMove"  PreviewMouseUp="rect1_MouseUp">
-            <Image Source="../imgs/мать.png" Height="170" Canvas.Left="28" Canvas.Top="102" Width="199"></Image>
-            <Image Source="../imgs/жесткий.png" Height="110" Canvas.Left="79" Canvas.Top="272" Width="100"></Image>
-            <Image Source="../imgs/оперативка.png" Height="82" Canvas.Left="640" Canvas.Top="73" RenderTransformOrigin="0.5,0.5" Width="83">
-            </Image>
-
-            <Image Source="../imgs/видюха.png" Height="54" Canvas.Left="618" Canvas.Top="366" Width="105"></Image>
-            <Image Source="../imgs/блок питания.png" Height="119" Canvas.Left="618" Canvas.Top="230" Width="135"></Image>
-            <Image Source="../imgs/проц.png" Height="50" Canvas.Left="653" Canvas.Top="160" Width="57"></Image>
+            <Image x:Name="mp" Tag="0" Source="../imgs/мать.png" Height="170" Canvas.Left="28" Canvas.Top="102" Width="199"></Image>
+            <Image x:Name="hd" Tag="0" Source="../imgs/жесткий.png" Height="110" Canvas.Left="72" Canvas.Top="277" Width="100"></Image>
+            <Image x:Name="op" Tag="0" Source="../imgs/оперативка.png" Height="82" Canvas.Left="640" Canvas.Top="73" RenderTransformOrigin="0.5,0.5" Width="83"></Image>
+            <Image x:Name="vc" Tag="0" Source="../imgs/видюха.png" Height="54" Canvas.Left="618" Canvas.Top="366" Width="105"></Image>
+            <Image x:Name="pb" Tag="0" Source="../imgs/блок питания.png" Height="119" Canvas.Left="618" Canvas.Top="215" Width="135"></Image>
+            <Image x:Name="proc" Tag="0" Source="../imgs/проц.png" Height="50" Canvas.Left="653" Canvas.Top="160" Width="57"></Image>
         </Canvas>
     </Grid>
 </Page>

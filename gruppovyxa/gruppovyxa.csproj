@@ -66,11 +66,20 @@
     <Compile Include="frames\sequenceDoctor.xaml.cs">
       <DependentUpon>sequenceDoctor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="frames\sequenceDoctorHard.xaml.cs">
+      <DependentUpon>sequenceDoctorHard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="frames\sequenceLawyer.xaml.cs">
       <DependentUpon>sequenceLawyer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="frames\sequenceLawyerHard.xaml.cs">
+      <DependentUpon>sequenceLawyerHard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="frames\sequenceProgrammer.xaml.cs">
       <DependentUpon>sequenceProgrammer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frames\sequenceProgrammerHard.xaml.cs">
+      <DependentUpon>sequenceProgrammerHard.xaml</DependentUpon>
     </Compile>
     <Compile Include="IResultCheck.cs" />
     <Compile Include="Models\Ladder.cs" />
@@ -120,11 +129,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frames\sequenceDoctorHard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frames\sequenceLawyer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frames\sequenceLawyerHard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frames\sequenceProgrammer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frames\sequenceProgrammerHard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

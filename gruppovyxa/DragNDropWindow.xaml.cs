@@ -33,8 +33,9 @@ namespace gruppovyxa
         private void End_Click(object sender, RoutedEventArgs e)
         {
             stage.ResultCheck();
+            tbBall.Text = $"Количество баллов: {Math.Round(Controllers.Controller.currentBall)}";
 
-            this.Close();
+            //this.Close();
         }
     }
 }

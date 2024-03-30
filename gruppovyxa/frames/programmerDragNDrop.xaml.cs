@@ -22,6 +22,8 @@ namespace gruppovyxa.frames
     {
         Point p;
         int maxz;
+        double x;
+        double y;
 
         public programmerDragNDrop()
         {
@@ -71,6 +73,108 @@ namespace gruppovyxa.frames
             {
                 (e.Source as FrameworkElement).ReleaseMouseCapture();
                 (e.Source as FrameworkElement).Cursor = null;
+            }
+
+            if (a.Name == "mp")
+            {
+                x = Canvas.GetLeft(mp);
+                y = Canvas.GetTop(mp);
+                if (x >= 197 & y >= 110 & x <= 264 & y <= 145 & a.Tag != "1")
+                {
+                    Controllers.Controller.currentBall += 1.7;
+                    a.Tag = "1";
+                }
+                else if (a.Tag == "1")
+                {
+                    Controllers.Controller.currentBall -= 1.7;
+                    a.Tag = "0";
+                }
+
+            }
+
+            if (a.Name == "hd")
+            {
+                x = Canvas.GetLeft(hd);
+                y = Canvas.GetTop(hd);
+                if (x >= 410 & y >= 109 & x <= 469 & y <= 184 & a.Tag != "1")
+                {
+                    Controllers.Controller.currentBall += 1.7;
+                    a.Tag = "1";
+                }
+                else if (a.Tag == "1")
+                {
+                    Controllers.Controller.currentBall -= 1.7;
+                    a.Tag = "0";
+                }
+
+            }
+
+            if (a.Name == "pb")
+            {
+                x = Canvas.GetLeft(pb);
+                y = Canvas.GetTop(pb);
+                if (x >= 198 & y >= 190 & x <= 252 & y <= 331 & a.Tag != "1")
+                {
+                    Controllers.Controller.currentBall += 1.7;
+                    a.Tag = "1";
+                }
+                else if (a.Tag == "1")
+                {
+                    Controllers.Controller.currentBall -= 1.7;
+                    a.Tag = "0";
+                }
+
+            }
+
+            if (a.Name == "op")
+            {
+                x = Canvas.GetLeft(op);
+                y = Canvas.GetTop(op);
+                if (x >= 278 & y >= 107 & x <= 353 & y <= 190 & a.Tag != "1")
+                {
+                    Controllers.Controller.currentBall += 1.7;
+                    a.Tag = "1";
+                }
+                else if (a.Tag == "1")
+                {
+                    Controllers.Controller.currentBall -= 1.7;
+                    a.Tag = "0";
+                }
+
+            }
+
+            if (a.Name == "proc")
+            {
+                x = Canvas.GetLeft(proc);
+                y = Canvas.GetTop(proc);
+                if (x >= 252 & y >= 140 & x <= 356 & y <= 196 & a.Tag != "1")
+                {
+                    Controllers.Controller.currentBall += 1.7;
+                    a.Tag = "1";
+                }
+                else if (a.Tag == "1")
+                {
+                    Controllers.Controller.currentBall -= 1.7;
+                    a.Tag = "0";
+                }
+
+            }
+
+            if (a.Name == "vc")
+            {
+                x = Canvas.GetLeft(vc);
+                y = Canvas.GetTop(vc);
+                if (x >= 224 & y >= 199 & x <= 320 & y <= 280 & a.Tag != "1")
+                {
+                    Controllers.Controller.currentBall += 1.7;
+                    a.Tag = "1";
+                }
+                else if (a.Tag == "1")
+                {
+                    Controllers.Controller.currentBall -= 1.7;
+                    a.Tag = "0";
+                }
+
             }
         }
 

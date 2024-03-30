@@ -66,20 +66,18 @@ namespace gruppovyxa.frames
                 (e.Source as FrameworkElement).Cursor = null;
             }
 
-            //++баллы если отпустил элемент в нужном месте (сделайте норм масштаб для окон, а то у меня канвас не совпадает в полном экране с разметкой в xaml)
-
             if (a.Name == "brain")
             {
                 x = Canvas.GetLeft(brain);
                 y = Canvas.GetTop(brain);
-                if (x >= 352 & y >= 2 & x <= 391 & y <= 40 & a.Tag != "1")
+                if (x >= 352 & y >= -5 & x <= 384 & y <= 19 & a.Tag != "1")
                 {
-                    ball += 1.7;
+                    Controllers.Controller.currentBall += 1.7;
                     a.Tag = "1";                    
                 }
                 else if (a.Tag == "1")
                 {
-                    ball -= 1.7;
+                    Controllers.Controller.currentBall -= 1.7;
                     a.Tag = "0";
                 }
 
@@ -89,14 +87,14 @@ namespace gruppovyxa.frames
             {
                 x = Canvas.GetLeft(heart);
                 y = Canvas.GetTop(heart);
-                if (x >= 368 & y >= 132 & x <= 390 & y <= 150 & a.Tag != "1")
+                if (x >= 352 & y >= 71 & x <= 393 & y <= 99 & a.Tag != "1")
                 {
-                    ball += 1.7;
+                    Controllers.Controller.currentBall += 1.7;
                     a.Tag = "1";
                 }
                 else if (a.Tag == "1")
                 {
-                    ball -= 1.7;
+                    Controllers.Controller.currentBall -= 1.7;
                     a.Tag = "0";
                 }
             }
@@ -105,14 +103,14 @@ namespace gruppovyxa.frames
             {
                 x = Canvas.GetLeft(liver);
                 y = Canvas.GetTop(liver);
-                if (x >= 348 & y >= 184 & x <= 357 & y <= 190 & a.Tag != "1")
+                if (x >= 338 & y >= 116 & x <= 357 & y <= 126 & a.Tag != "1")
                 {
-                    ball += 1.7;
+                    Controllers.Controller.currentBall += 1.7;
                     a.Tag = "1";
                 }
                 else if (a.Tag == "1")
                 {
-                    ball -= 1.7;
+                    Controllers.Controller.currentBall -= 1.7;
                     a.Tag = "0";
                 }
             }
@@ -121,14 +119,14 @@ namespace gruppovyxa.frames
             {
                 x = Canvas.GetLeft(stomach);
                 y = Canvas.GetTop(stomach);
-                if (x >= 366 & y >= 187 & x <= 394 & y <= 196 & a.Tag != "1")
+                if (x >= 366 & y >= 120 & x <= 393 & y <= 135 & a.Tag != "1")
                 {
-                    ball += 1.7;
+                    Controllers.Controller.currentBall += 1.7;
                     a.Tag = "1";
                 }
                 else if (a.Tag == "1")
                 {
-                    ball -= 1.7;
+                    Controllers.Controller.currentBall -= 1.7;
                     a.Tag = "0";
                 }
             }
@@ -137,14 +135,14 @@ namespace gruppovyxa.frames
             {
                 x = Canvas.GetLeft(intestines);
                 y = Canvas.GetTop(intestines);
-                if (x >= 350 & y >= 222 & x <= 394 & y <= 250 & a.Tag != "1")
+                if (x >= 359 & y >= 152 & x <= 390 & y <= 174 & a.Tag != "1")
                 {
-                    ball += 1.7;
+                    Controllers.Controller.currentBall += 1.7;
                     a.Tag = "1";
                 }
                 else if (a.Tag == "1")
                 {
-                    ball -= 1.7;
+                    Controllers.Controller.currentBall -= 1.7;
                     a.Tag = "0";
                 }
             }
@@ -153,14 +151,14 @@ namespace gruppovyxa.frames
             {
                 x = Canvas.GetLeft(lungs);
                 y = Canvas.GetTop(lungs);
-                if (x >= 350 & y >= 112 & x <= 381 & y <= 132 & a.Tag != "1")
+                if (x >= 345 & y >= 67 & x <= 384 & y <= 96 & a.Tag != "1")
                 {
-                    ball += 1.7;
+                    Controllers.Controller.currentBall += 1.7;
                     a.Tag = "1";
                 }
                 else if (a.Tag == "1")
                 {
-                    ball -= 1.7;
+                    Controllers.Controller.currentBall -= 1.7;
                     a.Tag = "0";
                 }
             }            
@@ -168,7 +166,7 @@ namespace gruppovyxa.frames
 
         public void ResultCheck()
         {
-            //
+
         }
     }
 }

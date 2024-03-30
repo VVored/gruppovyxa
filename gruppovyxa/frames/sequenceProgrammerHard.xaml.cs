@@ -16,12 +16,11 @@ using System.Windows.Shapes;
 namespace gruppovyxa.frames
 {
     /// <summary>
-    /// Логика взаимодействия для sequenceDoctor.xaml
+    /// Логика взаимодействия для sequenceProgrammerHard.xaml
     /// </summary>
-    public partial class sequenceDoctor : Page, IResultCheck
+    public partial class sequenceProgrammerHard : Page, IResultCheck
     {
-
-        public sequenceDoctor()
+        public sequenceProgrammerHard()
         {
             InitializeComponent();
         }
@@ -94,14 +93,11 @@ namespace gruppovyxa.frames
 
         public void ResultCheck()
         {
-            if (tb1.Text == "Царство") Controllers.Controller.currentBall += 1.5;
-            if (tb2.Text == "Отдел") Controllers.Controller.currentBall += 1.5;
-            if (tb3.Text == "Класс") Controllers.Controller.currentBall += 1.5;
-            if (tb4.Text == "Порядок") Controllers.Controller.currentBall += 1.5;
-            if (tb5.Text == "Семейство") Controllers.Controller.currentBall += 1.5;
-            if (tb6.Text == "Род") Controllers.Controller.currentBall += 1.5;
-            if (tb7.Text == "Вид") Controllers.Controller.currentBall += 1.5;
+            if (tb1.Text == "Нажать на кнопку запуска") Controllers.Controller.currentBall += 2;
+            if (tb2.Text == "Запуск BIOS") Controllers.Controller.currentBall += 2;
+            if (tb3.Text == "Выполнение POST") Controllers.Controller.currentBall += 2;
+            if (tb4.Text == "Передача управления загрузчику") Controllers.Controller.currentBall += 2;
+            if (tb5.Text == "Инициализация загрузки ОС") Controllers.Controller.currentBall += 2;
         }
-
     }
 }

@@ -39,8 +39,8 @@ namespace gruppovyxa.frames
 
         private void Doctor_Click(object sender, RoutedEventArgs e)
         {
-            DragNDropWindow dragNDropWindow = new DragNDropWindow(new frames.sequenceDoctor());
-            dragNDropWindow.ShowDialog();
+            sequenceWindow sequenceWindow = new sequenceWindow(new frames.sequenceDoctor());
+            sequenceWindow.ShowDialog();
         }
     }
 }
