@@ -8,15 +8,22 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="doctorCrossword">
 
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Foreground" Value="Transparent"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 0">
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
+                <TextBlock Margin="10 5 0 5" Height="40" Width="40" TextAlignment="Right">3</TextBlock>
+                <TextBox Tag="3" BorderBrush="Black" Margin="5" Height="40" Width="40">Ц</TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="3" BorderBrush="Black" Margin="5" Height="40" Width="40">3 ц</TextBox>
-                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="5" BorderBrush="Black" Margin="5" Height="40" Width="40">5 с</TextBox>
+                <TextBlock Margin="10 5 0 5" Height="40" Width="40" TextAlignment="Right">5</TextBlock>
+                <TextBox Tag="5" BorderBrush="Black" Margin="5" Height="40" Width="40">С</TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
@@ -25,74 +32,87 @@
             <StackPanel Orientation="Horizontal">
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="3" BorderBrush="Black" Margin="5" Height="40" Width="40">а</TextBox>
+                <TextBox Tag="3" BorderBrush="Black" Margin="5" Height="40" Width="40">А</TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="5" BorderBrush="Black" Margin="5" Height="40" Width="40">п</TextBox>
+                <TextBox Tag="5" BorderBrush="Black" Margin="5" Height="40" Width="40">П</TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">4 д</TextBox>
-                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <TextBox Tag="2" BorderBrush="Black" Margin="5" Height="40" Width="40">2 д</TextBox>
-                <TextBox Tag="2" BorderBrush="Black" Margin="5" Height="40" Width="40">е</TextBox>
-                <TextBox Name="TriAndDva" Tag="2" BorderBrush="Black" Margin="5" Height="40" Width="40">р</TextBox>
-                <TextBox Tag="2" BorderBrush="Black" Margin="5" Height="40" Width="40">е</TextBox>
-                <TextBox Tag="2" BorderBrush="Black" Margin="5" Height="40" Width="40">в</TextBox>
-                <TextBox Name="DvaAndPyat" Tag="2" BorderBrush="Black" Margin="5" Height="40" Width="40">о</TextBox>
-                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">е</TextBox>
+                <TextBlock Margin="10 5 0 5" Height="40" Width="40" TextAlignment="Right">4</TextBlock>
+                <TextBox Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">Д</TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="-10 5 0 5" TextAlignment="Right">2</TextBlock>
+                <TextBox Tag="2" BorderBrush="Black" Margin="5" Height="40" Width="40">Д</TextBox>
+                <TextBox Tag="2" BorderBrush="Black" Margin="5" Height="40" Width="40">Е</TextBox>
+                <Grid>
+                    <TextBox Tag="2" BorderBrush="Black" Margin="5" Height="40" Width="40">Р</TextBox>
+                    <TextBox Tag="3" BorderBrush="Black" Opacity="0" Margin="5" Height="40" Width="40">Р</TextBox>
+                </Grid>
+                <TextBox Tag="2" BorderBrush="Black" Margin="5" Height="40" Width="40">Е</TextBox>
+                <TextBox Tag="2" BorderBrush="Black" Margin="5" Height="40" Width="40">В</TextBox>
+                <Grid>
+                    <TextBox Tag="2" BorderBrush="Black" Margin="5" Height="40" Width="40">О</TextBox>
+                    <TextBox Opacity ="0" Tag="5" BorderBrush="Black" Margin="5" Height="40" Width="40">О</TextBox>
+                </Grid>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="3" BorderBrush="Black" Margin="5" Height="40" Width="40">с</TextBox>
-                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="5" BorderBrush="Black" Margin="5" Height="40" Width="40">р</TextBox>
-                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">л</TextBox>
+                <TextBox Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">Е</TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="3" BorderBrush="Black" Margin="5" Height="40" Width="40">т</TextBox>
+                <TextBox Tag="3" BorderBrush="Black" Margin="5" Height="40" Width="40">С</TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="5" BorderBrush="Black" Margin="5" Height="40" Width="40">а</TextBox>
+                <TextBox Tag="5" BorderBrush="Black" Margin="5" Height="40" Width="40">Р</TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">е</TextBox>
+                <TextBox Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">Л</TextBox>
+                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
+                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
+                <TextBox Tag="3" BorderBrush="Black" Margin="5" Height="40" Width="40">Т</TextBox>
+                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
+                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
+                <TextBox Tag="5" BorderBrush="Black" Margin="5" Height="40" Width="40">А</TextBox>
+                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
+                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
+                <TextBox Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">Е</TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="3" BorderBrush="Black" Margin="5" Height="40" Width="40">в</TextBox>
+                <TextBox Tag="3" BorderBrush="Black" Margin="5" Height="40" Width="40">В</TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">н</TextBox>
+                <TextBox Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">Н</TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">1 п</TextBox>
-                <TextBox Name="OdinAndTri" Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">о</TextBox>
-                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">п</TextBox>
-                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">у</TextBox>
-                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">л</TextBox>
-                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">я</TextBox>
-                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">ц</TextBox>
-                <TextBox Name="OdinAndChetire" Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">и</TextBox>
-                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">я</TextBox>
+                <TextBlock Margin="10 5 0 5" Height="40" Width="40" TextAlignment="Right">1</TextBlock>
+                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">П</TextBox>
+                <Grid>
+                    <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">О</TextBox>
+                    <TextBox Opacity="0" Tag="3" BorderBrush="Black" Margin="5" Height="40" Width="40">О</TextBox>
+                </Grid>
+                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">П</TextBox>
+                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">У</TextBox>
+                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">Л</TextBox>
+                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">Я</TextBox>
+                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">Ц</TextBox>
+                <Grid>
+                    <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">И</TextBox>
+                    <TextBox Opacity="0" Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">И</TextBox>
+                </Grid>
+                <TextBox Tag="1" BorderBrush="Black" Margin="5" Height="40" Width="40">Я</TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
@@ -103,7 +123,7 @@
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
-                <TextBox Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">я</TextBox>
+                <TextBox Tag="4" BorderBrush="Black" Margin="5" Height="40" Width="40">Е</TextBox>
                 <TextBox Visibility="Hidden" Margin="5" Height="40" Width="40"></TextBox>
             </StackPanel>
         </StackPanel>

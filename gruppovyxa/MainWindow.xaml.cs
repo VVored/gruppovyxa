@@ -29,9 +29,18 @@ namespace gruppovyxa
 
         private void SMS_Click(object sender, RoutedEventArgs e)
         {
-            Random ran = new Random();
-            a = ran.Next(1111, 9999);
-            MessageBox.Show(a.ToString());
+            try
+            {
+                if (phone.Text == "") throw new Exception("Введите Ваш номер телефона");
+                Random ran = new Random();
+                a = ran.Next(1111, 9999);
+                MessageBox.Show(a.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

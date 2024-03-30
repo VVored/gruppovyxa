@@ -8,8 +8,9 @@ namespace gruppovyxa.Models
 {
     public class User
     {
-        public string phone;
-        public string name;
-        
+        public string Phone { get; set; }
+        public string Name { get; set; }
+        public double Points { get; set; }
+        public string Profession { get; set; }
     }
 }

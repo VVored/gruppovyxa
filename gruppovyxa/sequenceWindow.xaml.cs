@@ -63,15 +63,15 @@ namespace gruppovyxa
             else
             {
                 if (stage.GetType() == typeof(frames.sequenceDoctorHard))
-                    nextStage = new frames.doctorCrossword();
+                    nextStage = new frames.doctorDragNDrop();
             else if (stage.GetType() == typeof(frames.sequenceLawyerHard))
-                    nextStage = new frames.lawyerCrossword();
+                    nextStage = new frames.lawyerDragNDrop();
                 else
-                    nextStage = new frames.programmerCrossword();
+                    nextStage = new frames.programmerDragNDrop();
 
                 this.Close();
 
-                CrosswordWindow win = new CrosswordWindow(nextStage);
+                DragNDropWindow win = new DragNDropWindow(nextStage);
                 win.ShowDialog();
             }
 

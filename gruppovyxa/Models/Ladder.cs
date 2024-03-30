@@ -8,9 +8,9 @@ namespace gruppovyxa.Models
 {
     public class Ladder : Subject
     {
-        List<User> DNDTop100;
-        List<User> crosswordTop100;
-        List<User> orderTop100;
+        List<User> ProgerTop100;
+        List<User> DoctorTop100;
+        List<User> LawyerTop100;
 
         public void notifyObserver()
         {

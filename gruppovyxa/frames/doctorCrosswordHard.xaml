@@ -1,0 +1,268 @@
+﻿<Page x:Class="gruppovyxa.frames.doctorCrosswordHard"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:gruppovyxa.frames"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="doctorCrosswordHard">
+
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Foreground" Value="Transparent"/>
+            <Setter Property="Padding" Value="3"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBlock Margin="10 5 0 5" Height="25" Width="25" TextAlignment="Right">1</TextBlock>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="1" Margin="5" Height="25" Width="25">Б</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="1" Margin="5" Height="25" Width="25">Е</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBlock Margin="10 5 0 5" Height="25" Width="25" TextAlignment="Right">2</TextBlock>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="2" Margin="5" Height="25" Width="25">С</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="2" Margin="5" Height="25" Width="25">Е</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="2" Margin="5" Height="25" Width="25">Р</TextBox>
+                <Grid>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="1" Margin="5" Height="25" Width="25">Д</TextBox>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Opacity="0" Tag="2" Margin="5" Height="25" Width="25">Д</TextBox>
+                </Grid>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="2" Margin="5" Height="25" Width="25">Ц</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="2" Margin="5" Height="25" Width="25">Е</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBlock Margin="10 5 0 5" Height="25" Width="25" TextAlignment="Right">3</TextBlock>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="3" Margin="5" Height="25" Width="25">П</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="1" Margin="5" Height="25" Width="25">Р</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBlock Margin="5 21 5 -7" Height="14" Width="25" >6</TextBlock>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="-10 5 0 5" TextAlignment="Right">4</TextBlock>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="4" Margin="5" Height="25" Width="25">Т</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="4" Margin="5" Height="25" Width="25">Е</TextBox>
+                <Grid>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="3" Margin="5" Height="25" Width="25">Л</TextBox>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="4" Opacity="0" Margin="5" Height="25" Width="25">Л</TextBox>
+                </Grid>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="4" Margin="5" Height="25" Width="25">О</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="1" Margin="5" Height="25" Width="25">Е</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBlock Margin="10 5 0 5" Height="25" Width="25" TextAlignment="Right">5</TextBlock>
+                <Grid>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="5" Margin="5" Height="25" Width="25">П</TextBox>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="6" Margin="5" Opacity="0" Height="25" Width="25">П</TextBox>
+                </Grid>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="5" Margin="5" Height="25" Width="25">Л</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="5" Margin="5" Height="25" Width="25">Ю</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="5" Margin="5" Height="25" Width="25">С</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="5" Margin="5" Height="25" Width="25">Н</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="5" Margin="5" Height="25" Width="25">Ы</TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="3" Margin="5" Height="25" Width="25">О</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="1" Margin="5" Height="25" Width="25">Н</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="6" Margin="5" Height="25" Width="25">Л</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBlock Margin="10 5 0 5" Height="25" Width="25" TextAlignment="Right">7</TextBlock>
+                <Grid>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="3" Margin="5" Height="25" Width="25">С</TextBox>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="7" Margin="5" Opacity="0" Height="25" Width="25">С</TextBox>
+                </Grid>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="7" Margin="5" Height="25" Width="25">М</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="7" Margin="5" Height="25" Width="25">Е</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="7" Margin="5" Height="25" Width="25">Ш</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="7" Margin="5" Height="25" Width="25">А</TextBox>
+                <Grid>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="1" Margin="5" Height="25" Width="25">Н</TextBox>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="7" Margin="5" Opacity="0" Height="25" Width="25">Н</TextBox>
+                </Grid>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="7" Margin="5" Height="25" Width="25">Н</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="7" Margin="5" Height="25" Width="25">Ы</TextBox>
+                <Grid>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="6" Margin="5" Height="25" Width="25">Е</TextBox>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="7" Opacity="0" Margin="5" Height="25" Width="25">Е</TextBox>
+                </Grid>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="3" Margin="5" Height="25" Width="25">К</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="1" Margin="5" Height="25" Width="25">А</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="6" Margin="5" Height="25" Width="25">Ч</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="-10 5 0 5" TextAlignment="Right">8</TextBlock>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="8" Margin="5" Height="25" Width="25">Э</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="8" Margin="5" Height="25" Width="25">П</TextBox>
+                <Grid>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="3" Margin="5" Height="25" Width="25">И</TextBox>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="8" Opacity="0" Margin="5" Height="25" Width="25">И</TextBox>
+                </Grid>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="8" Margin="5" Height="25" Width="25">Ф</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="8" Margin="5" Height="25" Width="25">И</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="8" Margin="5" Height="25" Width="25">З</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="1" Margin="5" Height="25" Width="25">Я</TextBox>
+                <TextBlock Margin="10 5 0 5" Height="25" Width="25" TextAlignment="Right">9</TextBlock>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="9" Margin="5" Height="25" Width="25">Ч</TextBox>
+                <Grid>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="6" Margin="5" Height="25" Width="25">Е</TextBox>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Opacity="0" Tag="9" Margin="5" Height="25" Width="25">Е</TextBox>
+                </Grid>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="9" Margin="5" Height="25" Width="25">Р</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="9" Margin="5" Height="25" Width="25">Е</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="9" Margin="5" Height="25" Width="25">П</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="3" Margin="5" Height="25" Width="25">Е</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="6" Margin="5" Height="25" Width="25">В</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="6" Margin="5" Height="25" Width="25">А</TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBlock Margin="10 5 0 5" Height="25" Width="25" TextAlignment="Right">10</TextBlock>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="10" Margin="5" Height="25" Width="25">О</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="10" Margin="5" Height="25" Width="25">П</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="10" Margin="5" Height="25" Width="25">О</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="10" Margin="5" Height="25" Width="25">Р</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="10" Margin="5" Height="25" Width="25">Н</TextBox>
+                <TextBox IsReadOnly="true" BorderBrush="Black" Tag="10" Margin="5" Height="25" Width="25">А</TextBox>
+                <Grid>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Tag="6" Margin="5" Height="25" Width="25">Я</TextBox>
+                    <TextBox IsReadOnly="true" Opacity="0" BorderBrush="Black" Tag="10" Margin="5" Height="25" Width="25">Я</TextBox>
+                </Grid>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+                <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
+

@@ -35,7 +35,18 @@ namespace gruppovyxa
             stage.ResultCheck();
             tbBall.Text = $"Количество баллов: {Math.Round(Controllers.Controller.currentBall)}";
 
-            //this.Close();
+            IResultCheck nextStage;
+
+            if (stage.GetType() == typeof(frames.doctorDragNDrop))
+                nextStage = new frames.doctorCrossword();
+            else if (stage.GetType() == typeof(frames.lawyerDragNDrop))
+                nextStage = new frames.lawyerCrossword();
+            else
+                nextStage = new frames.programmerCrossword();
+
+            CrosswordWindow win = new CrosswordWindow(nextStage);
+            this.Close();
+            win.ShowDialog();
         }
     }
 }

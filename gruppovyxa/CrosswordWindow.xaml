@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gruppovyxa"
         mc:Ignorable="d"
-        Title="Кроссворд" Icon="imgs/Parsec Games.png" MinHeight="450" MinWidth="800" ResizeMode="NoResize">
+        Title="CrosswordWindow" MinHeight="450" MinWidth="800" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -21,11 +21,20 @@
                 <ColumnDefinition Width="400*"/>
                 <ColumnDefinition Width="300*"/>
             </Grid.ColumnDefinitions>
-            <Frame Margin="20" Grid.Row="0" Grid.Column="0" Name="crossFrame"></Frame>
-            <ListBox Margin="20" Grid.Row="0" Grid.Column="1" Name="listOfQuestions"></ListBox>
-            <TextBox Grid.Row="1" Grid.ColumnSpan="2" Margin="300, 20"></TextBox>
-            <Button Grid.Row="1" Grid.ColumnSpan="2" Margin="25, 15" HorizontalAlignment="Right" Padding="5" FontWeight="SemiBold" Background="Black" Foreground="White"  Click="End_Click">Завершить этап</Button>
-            <Button Grid.Row="1" Grid.ColumnSpan="2" Margin="200, 15" HorizontalAlignment="Right" Padding="25, 0" FontWeight="SemiBold" Background="Black" Foreground="White">Ввод</Button>
+            <Frame NavigationUIVisibility="Hidden" Margin="20" Grid.Row="0" Grid.Column="0" Name="crossFrame"></Frame>
+            <ListBox Margin="20" Grid.Row="0" Grid.Column="1" Name="listOfQuestions" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <TextBlock Grid.Row="1" Grid.Column="0"   x:Name="TimerText" Width="100" Height="40" TextAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+            <Button Grid.Row="1" x:Name="hint" Grid.Column="0" Margin="150 15 0 15" HorizontalAlignment="Left" Padding="5" FontWeight="SemiBold" Background="Black" Foreground="White" Click="hint_Click">Подсказка</Button>
+
+            <TextBox Grid.Row="1" Grid.ColumnSpan="2" x:Name="vvod" Margin="300, 20"></TextBox>
+            <Button Grid.Row="1" Grid.ColumnSpan="2" Margin="25, 15" HorizontalAlignment="Right" Padding="5" FontWeight="SemiBold" Background="Black" Foreground="White" Click="Button_Click_1">Завершить этап</Button>
+            <Button Grid.Row="1" Grid.ColumnSpan="2" Margin="200, 15" HorizontalAlignment="Right" Padding="25, 0" FontWeight="SemiBold" Background="Black" Foreground="White" Click="Button_Click">Ввод</Button>
         </Grid>
     </Grid>
 </Window>
