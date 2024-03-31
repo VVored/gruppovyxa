@@ -92,6 +92,7 @@
     <Compile Include="IResultCheck.cs" />
     <Compile Include="Models\Ladder.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Observer.cs" />
     <Compile Include="sequenceWindow.xaml.cs">
       <DependentUpon>sequenceWindow.xaml</DependentUpon>
     </Compile>
