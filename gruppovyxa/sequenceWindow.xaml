@@ -13,6 +13,7 @@
             <RowDefinition Height="0.6*"/>
         </Grid.RowDefinitions>
         <Image Source="imgs/Parsec Games.png" Width="40" VerticalAlignment="Top" Margin="0,10,0,0" Grid.Column="0" HorizontalAlignment="Left" Height="40"></Image>
+        <Button Grid.Row="2" x:Name="hint" Margin="543,14.8,0,14.6" HorizontalAlignment="Left" Padding="5" FontWeight="SemiBold" Background="Black" Foreground="White" Click="hint_Click">Подсказка</Button>
         <Button Grid.Row="2" Margin="25, 15" HorizontalAlignment="Right" Padding="5" FontWeight="SemiBold" Background="Black" Foreground="White"  Click="End_Click">Завершить этап</Button>
         <TextBlock FontWeight="SemiBold" TextWrapping="Wrap" Grid.Row="0" HorizontalAlignment="Center" FontSize="15" VerticalAlignment="Center" Name="Poyas">Пояснение к заданию:</TextBlock>
         <Frame Grid.Row="1" Name="frame"></Frame>

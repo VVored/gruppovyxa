@@ -70,15 +70,15 @@ namespace gruppovyxa.frames
             {
                 x = Canvas.GetLeft(brain);
                 y = Canvas.GetTop(brain);
-                if (x >= 352 & y >= -5 & x <= 384 & y <= 19 & a.Tag != "1")
+                if (x >= 352 & y >= -5 & x <= 384 & y <= 19 & a.Tag != "0")
                 {
                     Controllers.Controller.currentBall += 1.7;
-                    a.Tag = "1";                    
+                    a.Tag = "0";                    
                 }
-                else if (a.Tag == "1")
+                else if (a.Tag == "0")
                 {
                     Controllers.Controller.currentBall -= 1.7;
-                    a.Tag = "0";
+                    a.Tag = "1";
                 }
 
             }
@@ -87,15 +87,15 @@ namespace gruppovyxa.frames
             {
                 x = Canvas.GetLeft(heart);
                 y = Canvas.GetTop(heart);
-                if (x >= 352 & y >= 71 & x <= 393 & y <= 99 & a.Tag != "1")
+                if (x >= 352 & y >= 71 & x <= 393 & y <= 99 & a.Tag != "0")
                 {
                     Controllers.Controller.currentBall += 1.7;
-                    a.Tag = "1";
+                    a.Tag = "0";
                 }
-                else if (a.Tag == "1")
+                else if (a.Tag == "0")
                 {
                     Controllers.Controller.currentBall -= 1.7;
-                    a.Tag = "0";
+                    a.Tag = "3";
                 }
             }
 
@@ -103,15 +103,15 @@ namespace gruppovyxa.frames
             {
                 x = Canvas.GetLeft(liver);
                 y = Canvas.GetTop(liver);
-                if (x >= 338 & y >= 116 & x <= 357 & y <= 126 & a.Tag != "1")
+                if (x >= 338 & y >= 116 & x <= 357 & y <= 126 & a.Tag != "0")
                 {
                     Controllers.Controller.currentBall += 1.7;
-                    a.Tag = "1";
+                    a.Tag = "0";
                 }
-                else if (a.Tag == "1")
+                else if (a.Tag == "0")
                 {
                     Controllers.Controller.currentBall -= 1.7;
-                    a.Tag = "0";
+                    a.Tag = "2";
                 }
             }
 
@@ -119,15 +119,15 @@ namespace gruppovyxa.frames
             {
                 x = Canvas.GetLeft(stomach);
                 y = Canvas.GetTop(stomach);
-                if (x >= 366 & y >= 120 & x <= 393 & y <= 135 & a.Tag != "1")
+                if (x >= 366 & y >= 120 & x <= 393 & y <= 135 & a.Tag != "0")
                 {
                     Controllers.Controller.currentBall += 1.7;
-                    a.Tag = "1";
+                    a.Tag = "0";
                 }
-                else if (a.Tag == "1")
+                else if (a.Tag == "0")
                 {
                     Controllers.Controller.currentBall -= 1.7;
-                    a.Tag = "0";
+                    a.Tag = "4";
                 }
             }
 
@@ -135,15 +135,15 @@ namespace gruppovyxa.frames
             {
                 x = Canvas.GetLeft(intestines);
                 y = Canvas.GetTop(intestines);
-                if (x >= 359 & y >= 152 & x <= 390 & y <= 174 & a.Tag != "1")
+                if (x >= 359 & y >= 152 & x <= 390 & y <= 174 & a.Tag != "0")
                 {
                     Controllers.Controller.currentBall += 1.7;
-                    a.Tag = "1";
+                    a.Tag = "0";
                 }
-                else if (a.Tag == "1")
+                else if (a.Tag == "0")
                 {
                     Controllers.Controller.currentBall -= 1.7;
-                    a.Tag = "0";
+                    a.Tag = "5";
                 }
             }
 
@@ -151,15 +151,15 @@ namespace gruppovyxa.frames
             {
                 x = Canvas.GetLeft(lungs);
                 y = Canvas.GetTop(lungs);
-                if (x >= 345 & y >= 67 & x <= 384 & y <= 96 & a.Tag != "1")
+                if (x >= 345 & y >= 67 & x <= 384 & y <= 96 & a.Tag != "0")
                 {
                     Controllers.Controller.currentBall += 1.7;
-                    a.Tag = "1";
+                    a.Tag = "0";
                 }
-                else if (a.Tag == "1")
+                else if (a.Tag == "0")
                 {
                     Controllers.Controller.currentBall -= 1.7;
-                    a.Tag = "0";
+                    a.Tag = "6";
                 }
             }            
         }       

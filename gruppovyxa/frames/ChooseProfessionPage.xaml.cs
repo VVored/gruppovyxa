@@ -27,19 +27,19 @@ namespace gruppovyxa.frames
 
         private void Lawer_Click(object sender, RoutedEventArgs e)
         {
-            sequenceWindow sequenceWindow = new sequenceWindow(new frames.sequenceLawyer());
+            sequenceWindow sequenceWindow = new sequenceWindow(new frames.sequenceLawyer(), 0);
             sequenceWindow.ShowDialog();
         }
 
         private void Programmer_Click(object sender, RoutedEventArgs e)
         {
-            sequenceWindow sequenceWindow = new sequenceWindow(new frames.sequenceProgrammer());
+            sequenceWindow sequenceWindow = new sequenceWindow(new frames.sequenceProgrammer(), 0);
             sequenceWindow.ShowDialog();
         }
 
         private void Doctor_Click(object sender, RoutedEventArgs e)
         {
-            sequenceWindow sequenceWindow = new sequenceWindow(new frames.sequenceDoctor());
+            sequenceWindow sequenceWindow = new sequenceWindow(new frames.sequenceDoctor(), 0);
             sequenceWindow.ShowDialog();
         }
     }

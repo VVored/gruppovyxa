@@ -24,11 +24,13 @@ namespace gruppovyxa
     public partial class CrosswordWindow : Window
     {
         IResultCheck page;
-        public CrosswordWindow(IResultCheck page)
+        double stagepoint;
+        public CrosswordWindow(IResultCheck page, double stagepoint)
         {
             InitializeComponent();
             this.page = page;
             crossFrame.NavigationService.Navigate(page);
+            this.stagepoint = stagepoint;
         }
        
 
@@ -226,25 +228,49 @@ namespace gruppovyxa
                 Controllers.Controller.currentBall += 10;
                 if (page is programmerCrossword || page is lawyerCrossword || page is doctorCrossword)
                 {
-                    if (page is programmerCrossword)
-                        page = new programmerCrosswordHard();
+                    try
+                    {
+                        if(Controllers.Controller.currentBall - stagepoint <= 0) throw new Exception("Этап не пройден");
 
-                    if (page is lawyerCrossword)
-                        page = new lawyerCrosswordHard();
+                        if (page is programmerCrossword)
+                            page = new programmerCrosswordHard();
 
-                    if (page is doctorCrossword)
-                        page = new doctorCrosswordHard();
+                        if (page is lawyerCrossword)
+                            page = new lawyerCrosswordHard();
 
-                    crossFrame.Navigate(page);
+                        if (page is doctorCrossword)
+                            page = new doctorCrosswordHard();
 
-                    hint.Visibility = Visibility.Visible;
+                        crossFrame.Navigate(page);
 
+                        hint.Visibility = Visibility.Visible;
 
-                    UpdateList();
+                        stagepoint = Controllers.Controller.currentBall;
+                        UpdateList();
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        this.Close();
+                        Controllers.Controller.currentBall = 0;
+                    }
+
                 }
                 else
                 {
-                    this.Close();
+                    try
+                    {
+                        if (Controllers.Controller.currentBall - stagepoint <= 0) throw new Exception("Этап не пройден");
+                        MessageBox.Show("Ура, победа!");
+                        this.Close();
+                        Controllers.Controller.currentBall = 0;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        this.Close();
+                        Controllers.Controller.currentBall = 0;
+                    }
                 }
 
             }
@@ -402,7 +428,7 @@ namespace gruppovyxa
                 }
                 else if (clickCount == 2)
                 {
-                    Controllers.Controller.currentBall -= 3;
+                    Controllers.Controller.currentBall -= 5;
                     hint.Visibility = Visibility.Hidden;
                 }
             }
@@ -415,7 +441,7 @@ namespace gruppovyxa
                 }
                 else if (clickCount2 == 2)
                 {
-                    Controllers.Controller.currentBall -= 3;
+                    Controllers.Controller.currentBall -= 5;
                     hint.Visibility = Visibility.Hidden;
                 }
             }
@@ -571,7 +597,9 @@ namespace gruppovyxa
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Этап не пройден");
             this.Close();
+            Controllers.Controller.currentBall = 0;
         }
     }
 }

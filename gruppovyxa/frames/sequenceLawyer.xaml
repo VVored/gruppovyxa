@@ -17,7 +17,7 @@
             <TextBlock FontSize="30" HorizontalAlignment="Center">ПОЛНОМОЧИЯ</TextBlock>
             <ListBox Margin="10">
                 <ListBoxItem>
-                    <TextBlock>а) осуществление по обеспечению</TextBlock>
+                    <TextBlock>а) осуществление мер по обеспечению обороны страны</TextBlock>
                 </ListBoxItem>
                 <ListBoxItem>
                     <TextBlock>б) обеспечение проведения в РФ единой финансовой политики</TextBlock>
@@ -55,11 +55,11 @@
                     <TextBox IsReadOnly="True" Height="40" Width="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Д</TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0, 0, 0, 0" HorizontalAlignment="Center">
-                    <TextBox x:Name="tb1" TextAlignment="Center" Padding="0,10"  Height="40" Width="40"></TextBox>
-                    <TextBox x:Name="tb2" TextAlignment="Center" Padding="0,10" Height="40" Width="40"></TextBox>
-                    <TextBox x:Name="tb3" TextAlignment="Center" Padding="0,10" Height="40" Width="40"></TextBox>
-                    <TextBox x:Name="tb4" TextAlignment="Center" Padding="0,10" Height="40" Width="40"></TextBox>
-                    <TextBox x:Name="tb5" TextAlignment="Center" Padding="0,10" Height="40" Width="40"></TextBox>
+                    <TextBox Tag="1" x:Name="tb1" TextAlignment="Center" Padding="0,10"  Height="40" Width="40"></TextBox>
+                    <TextBox Tag="2" x:Name="tb2" TextAlignment="Center" Padding="0,10" Height="40" Width="40"></TextBox>
+                    <TextBox Tag="3" x:Name="tb3" TextAlignment="Center" Padding="0,10" Height="40" Width="40"></TextBox>
+                    <TextBox Tag="4" x:Name="tb4" TextAlignment="Center" Padding="0,10" Height="40" Width="40"></TextBox>
+                    <TextBox Tag="5" x:Name="tb5" TextAlignment="Center" Padding="0,10" Height="40" Width="40"></TextBox>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
