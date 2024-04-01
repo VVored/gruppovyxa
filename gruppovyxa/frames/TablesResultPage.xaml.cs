@@ -20,9 +20,10 @@ namespace gruppovyxa.frames
     /// </summary>
     public partial class TablesResultPage : Page
     {
-        public TablesResultPage()
+        public TablesResultPage(List<Models.User> source)
         {
             InitializeComponent();
+            dg1.ItemsSource = source;
         }
     }
 }

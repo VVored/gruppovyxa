@@ -11,6 +11,6 @@ namespace gruppovyxa.Models
         public string Phone { get; set; }
         public string Name { get; set; }
         public double Points { get; set; }
-        public string Profession { get; set; }
+        //public string Profession { get; set; }
     }
 }

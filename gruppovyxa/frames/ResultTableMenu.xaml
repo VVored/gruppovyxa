@@ -1,0 +1,40 @@
+﻿<Page x:Class="gruppovyxa.frames.ResultTableMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:gruppovyxa.frames"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ResultTableMenu">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Button Margin="10, 20" Grid.Row="0" Grid.Column="1" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White" Click="Programmer_Click">
+            <Button.Content>
+                <Viewbox Stretch="Uniform">
+                    <TextBlock Padding="12">Программист</TextBlock>
+                </Viewbox>
+            </Button.Content>
+        </Button>
+        <Button Margin="10, 20" Grid.Row="1" Grid.Column="1" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White" Click="Lawer_Click">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Padding="12">Юрист</TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Margin="10, 20" Grid.Row="2" Grid.Column="1" FontSize="10" FontWeight="SemiBold" Padding="5" Background="Black" Foreground="White" Click="Doctor_Click">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Padding="12">Доктор</TextBlock>
+            </Viewbox>
+        </Button>
+    </Grid>
+</Page>

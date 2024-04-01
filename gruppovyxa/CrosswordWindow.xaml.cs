@@ -260,8 +260,19 @@ namespace gruppovyxa
                 {
                     try
                     {
+                        string job = "";
+                        if (page is programmerCrosswordHard)
+                            job = "программист";
+
+                        if (page is lawyerCrosswordHard)
+                            job = "юрист";
+
+                        if (page is doctorCrosswordHard)
+                            job = "доктор";
+
                         if (Controllers.Controller.currentBall - stagepoint <= 0) throw new Exception("Этап не пройден");
                         MessageBox.Show("Ура, победа!");
+                        Controllers.Controller.GameEnd(job);
                         this.Close();
                         Controllers.Controller.currentBall = 0;
                     }

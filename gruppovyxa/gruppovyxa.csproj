@@ -68,6 +68,9 @@
     <Compile Include="frames\programmerDragNDrop.xaml.cs">
       <DependentUpon>programmerDragNDrop.xaml</DependentUpon>
     </Compile>
+    <Compile Include="frames\ResultTableMenu.xaml.cs">
+      <DependentUpon>ResultTableMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="frames\sequenceDoctor.xaml.cs">
       <DependentUpon>sequenceDoctor.xaml</DependentUpon>
     </Compile>
@@ -142,6 +145,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="frames\programmerDragNDrop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frames\ResultTableMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

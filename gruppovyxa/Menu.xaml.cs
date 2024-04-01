@@ -36,7 +36,7 @@ namespace gruppovyxa
 
         private void rating(object sender, RoutedEventArgs e)
         {
-            frame.NavigationService.Navigate(new frames.TablesResultPage());
+            frame.NavigationService.Navigate(new frames.ResultTableMenu(frame));
         }
     }
 }

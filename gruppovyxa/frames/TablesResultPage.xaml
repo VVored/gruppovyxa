@@ -9,8 +9,15 @@
       Title="TablesResultPage">
 
     <Grid>
+        
         <TextBlock FontSize="30" Margin="0, 0">Результаты профессий</TextBlock>
-        <DataGrid Margin="0, 30, 0, 0">
+
+        <DataGrid Margin="0, 30, 0, 0" Name="dg1"  IsReadOnly="True" AutoGenerateColumns="False" ColumnWidth="*">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Логин" Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding Phone}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Кол-во очков" Binding="{Binding Points}"></DataGridTextColumn>
+            </DataGrid.Columns>
         </DataGrid>
     </Grid>
 </Page>
