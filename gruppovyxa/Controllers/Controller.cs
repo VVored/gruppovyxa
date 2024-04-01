@@ -15,13 +15,28 @@ namespace gruppovyxa.Controllers
 
         public static void UserSignIn(TextBox name, TextBox phone)
         {
-            var users = File.ReadAllText("Users.txt").Split('\n');
-            File.WriteAllLines("Users.txt", users);
-            StreamWriter sw = new StreamWriter("Users.txt");
-            
-            if (!users.Contains($"{name.Text} {phone.Text}"))
-                sw.WriteLine($"{name.Text} {phone.Text}");
+            //var users = File.ReadAllText("Users.txt").Split('\n');
+            //File.WriteAllLines("Users.txt", users);
 
+            //StreamWriter sw = new StreamWriter("Users.txt");
+
+            //if (!users.Contains($"{name.Text} {phone.Text}"))
+            //    sw.WriteLine($"{name.Text} {phone.Text}");
+
+            //sw.Close();
+
+            StreamReader sr = new StreamReader("Users.txt");
+            string users = sr.ReadToEnd();
+            sr.Close();
+            var allusers = users.Split('\n');
+            StreamWriter sw = new StreamWriter("Users.txt");
+
+            
+                if (!allusers.Contains($"{name.Text} {phone.Text} "))
+                    users += $"{name.Text} {phone.Text} \n";
+            
+
+            sw.Write(users);
             sw.Close();
         }
 
