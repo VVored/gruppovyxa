@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace gruppovyxa
 {
@@ -64,54 +65,28 @@ namespace gruppovyxa
         {
             if (stage is doctorDragNDrop || stage is programmerDragNDrop || stage is lawyerDragNDrop)
             {
-                //clickCount++;
-                //if (clickCount == 1)
-                //{
-                //    Controllers.Controller.currentBall -= 2;
-                //}
-                //else if (clickCount == 2)
-                //{
-                //    Controllers.Controller.currentBall -= 5;
-                //    hint.Visibility = Visibility.Hidden;
-                //}
-                tbBall.Text = $"Количество баллов: {Math.Round(Controllers.Controller.currentBall)}";
+                clickCount++;
+                if (clickCount == 1)
+                {
+                    Controllers.Controller.currentBall -= 2;
+                }
+                else if (clickCount == 2)
+                {
+                    Controllers.Controller.currentBall -= 5;
+                    hint.Visibility = Visibility.Hidden;
+                }
 
             }
 
             HintWindow HW = new HintWindow();
 
-
-
-            var programmer_hints = new Dictionary<string, string>
-            {
-                {"1", ""},
-                {"2", ""},
-                {"3", ""},
-                {"4", ""},
-                {"5", ""},
-                {"6", ""}
-            };
             var lawyer_hints = new Dictionary<string, string>
             {
-                {"1", ""},
-                {"2", ""},
-                {"3", ""},
-                {"4", ""},
-                {"5", ""}
+                {"1", "Мировозренческая закрепляет основы мировоззрения, основные общественные ценности, например гуманизм, равенство, правосудие, патриотизм"},
+                {"2", "Правохранительная Конституция предоставляет гражданам права и свободы, а также механизмы их защиты"},
+                {"3", "Системообразующая Конституция возглавляет систему нормативных актов, связывая их в единую систему"},
+                {"4", "Учредительная Конституция создает основу для функционирования государства и общества, закрепляет общие принципы"}
             };
-            var doctor_hints = new Dictionary<string, string>
-            {
-                {"1", "Мозг."},
-                {"2", "Печень."},
-                {"3", "Сердце."},
-                {"4", "Желудок."},
-                {"5", "Кишечник."},
-                {"6", "Легкие."}
-            };
-
-
-
-
 
             var allTextBlocks = FindVisualChildren<TextBlock>(stage as Page);
 
@@ -131,26 +106,21 @@ namespace gruppovyxa
 
             if (stage is programmerDragNDrop)
             {
-                foreach (var hint in programmer_hints)
-                {
-                    if (allImages.Where(p => p.Tag != null && p.Tag.ToString() == hint.Key).All(p => p.Tag.ToString() != "0"))
-                    {
-                        HW.HintText.Text = hint.Value;
-                        break;
-                    }
-                }
+                HW.img.Height = 150;
+                if(clickCount <= 1)
+                HW.img.Source = new BitmapImage(new Uri("/imgs/пк_подсказка_1.png", UriKind.Relative));
+                else
+                    HW.img.Source = new BitmapImage(new Uri("/imgs/пк_подсказка_2.jpg", UriKind.Relative));
+
             }
 
             if (stage is doctorDragNDrop)
             {
-                foreach (var hint in doctor_hints)
-                {
-                    if (allImages.Where(p => p.Tag != null && p.Tag.ToString() == hint.Key).All(p => p.Tag != "0"))
-                    {
-                        HW.HintText.Text = hint.Value;
-                        break;
-                    }
-                }
+                HW.img.Height = 150;
+                if (clickCount <= 1)
+                    HW.img.Source = new BitmapImage(new Uri("/imgs/органы1.jpg", UriKind.Relative));
+                else
+                    HW.img.Source = new BitmapImage(new Uri("/imgs/органы2.png", UriKind.Relative));
             }
             HW.Show();
 

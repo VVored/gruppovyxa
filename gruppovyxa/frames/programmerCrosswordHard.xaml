@@ -260,7 +260,7 @@
                 <TextBox IsReadOnly="true" BorderBrush="Black" Tag="10" Margin="5" Height="25" Width="25">Т</TextBox>
                 <Grid>
                     <TextBox IsReadOnly="true" BorderBrush="Black" Tag="4" Margin="5" Height="25" Width="25">Е</TextBox>
-                    <TextBox IsReadOnly="true" BorderBrush="Black" Opacity="10" Tag="1" Margin="5" Height="25" Width="25">Е</TextBox>
+                    <TextBox IsReadOnly="true" BorderBrush="Black" Opacity="10" Tag="10" Margin="5" Height="25" Width="25">Е</TextBox>
                 </Grid>
                 <TextBox IsReadOnly="true" BorderBrush="Black" Tag="10" Margin="5" Height="25" Width="25">Р</TextBox>
                 <TextBox IsReadOnly="true" Visibility="Hidden" Margin="5" Height="25" Width="25"></TextBox>

@@ -280,14 +280,19 @@
     <Resource Include="imgs\сердце.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="imgs\пк_подсказка_1.png" />
+    <Resource Include="imgs\пк_подсказка_2.jpg" />
     <Resource Include="imgs\блок питания.png" />
     <Resource Include="imgs\видюха.png" />
     <Resource Include="imgs\жесткий.png" />
-    <Content Include="imgs\Запись 2024-03-23 212256.mp4" />
     <Resource Include="imgs\корпус.png" />
     <Resource Include="imgs\мать.png" />
     <Resource Include="imgs\оперативка.png" />
     <Resource Include="imgs\проц.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imgs\органы1.jpg" />
+    <Resource Include="imgs\органы2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
