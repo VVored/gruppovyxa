@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -32,6 +33,8 @@ namespace gruppovyxa
             try
             {
                 if (phone.Text == "") throw new Exception("Введите Ваш номер телефона");
+                if (!Regex.IsMatch(phone.Text, "^[0-9]+$")) throw new Exception("Немер не определен");
+                if (phone.Text.Length != 11) throw new Exception("Немер не определен");
                 Random ran = new Random();
                 a = ran.Next(1111, 9999);
                 MessageBox.Show(a.ToString());
@@ -48,7 +51,9 @@ namespace gruppovyxa
             try
             {
                 if (name.Text == "") throw new Exception("Введите Ваше имя");
-                if (phone.Text == "") throw new Exception("Введите Ваш номер телефона");
+                if (name.Text.Length < 3) throw new Exception("Слишком короткое имя"); 
+                if (name.Text.Length > 25) throw new Exception("Слишком длинное имя"); 
+                if(Regex.IsMatch(name.Text, "^[0-9]+$")) throw new Exception("Неверный формат имени");
                 if (smscod.Text == "") throw new Exception("Введите код из СМС");
                 if (int.Parse(smscod.Text) != a) throw new Exception("Код из СМС неверный");
 
