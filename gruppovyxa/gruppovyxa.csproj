@@ -294,5 +294,13 @@
     <Resource Include="imgs\органы1.jpg" />
     <Resource Include="imgs\органы2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Controllers\Top100doctor.txt" />
+    <Resource Include="Controllers\Top100lawyer.txt" />
+    <Resource Include="Controllers\Top100prog.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Controllers\Users.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

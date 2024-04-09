@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gruppovyxa"
         mc:Ignorable="d"
-        Title="Игрульки" Icon="imgs/Parsec Games.png" MinHeight="450" MinWidth="800" WindowStartupLocation="CenterScreen">
+        Title="Игрульки" Icon="imgs/Parsec Games.png" MinHeight="450" MinWidth="800" WindowStartupLocation="CenterScreen"  WindowState="Maximized">
     <Grid>
         <Grid>
             <Grid.ColumnDefinitions>

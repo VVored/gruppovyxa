@@ -29,7 +29,7 @@ namespace gruppovyxa
             else if (stage is sequenceProgrammer) Poyas.Text += "\n Восстановите правильный порядок этапов жизненного цикла ПО";
             else if (stage is sequenceDoctorHard) Poyas.Text += "\n Восстановите порядок действий для предотвращения кровотечения";
             else if (stage is sequenceLawyerHard) Poyas.Text += "\n Восстановите порядок регистрации юридического лица";
-            else Poyas.Text += "\n Рассположите в правильной порядке этапы запуска ПК";
+            else Poyas.Text += "\n Рассположите в правильном порядке этапы запуска ПК";
         }
 
         private void End_Click(object sender, RoutedEventArgs e)

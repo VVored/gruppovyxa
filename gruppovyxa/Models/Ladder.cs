@@ -40,6 +40,7 @@ namespace gruppovyxa.Models
             var list = Controllers.Controller.getTop100(path);
             list.Add(currentUser);
             list = Enumerable.OrderByDescending(list, p => p.Points).ToList();
+            
 
             switch (job)
             {

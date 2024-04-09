@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gruppovyxa"
         mc:Ignorable="d"
-        Title="Меню" Icon="imgs/Parsec Games.png" MinHeight="450" MinWidth="1000" WindowStartupLocation="CenterScreen">
+        Title="Меню" Icon="imgs/Parsec Games.png" MinHeight="450" MinWidth="1000" WindowStartupLocation="CenterScreen"  WindowState="Maximized">
     <Grid Name="grid1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="76*"/>
